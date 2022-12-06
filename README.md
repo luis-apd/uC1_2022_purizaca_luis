@@ -2,7 +2,7 @@
 
 **Curso:** Microcontroladores I
 
-**Autor:** Purizaca Dedios, Luis Antonio
+**Autor:** Purizaca Dedios, Luis Antonio.
 
 **Tarjeta:** Curiosity nano PIC18F57Q84
 
