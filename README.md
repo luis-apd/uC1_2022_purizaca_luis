@@ -7,7 +7,12 @@
 **Tarjeta:** Curiosity nano PIC18F57Q84
 
 **Entorno:** MPLAB X IDE
+ 
+**Product Version:** MPLAB X IDE v6.00
 
-**Lenguaje:** AMS - C
+**Lenguaje:** ASM - C
 
 **UNIVERSIDAD NACIONAL DE PIURA**
+
+_______________________________________________________________________________
+Se agregó una librería para retardos (delays.inc) 
