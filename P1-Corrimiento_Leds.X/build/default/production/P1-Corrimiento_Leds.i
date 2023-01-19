@@ -5,9 +5,10 @@
 ; @file : P1-Corrimiento_Leds.X
 ; @brief : Corrimiento de bits pares e impares
 ; @brief : Product Version: MPLAB X IDE v6.00
-; @date : 14/01/2023
+; @date : 18/01/2023
 ; @author: PURIZACA DEDIOS LUIS ANTONIO
 ;-------------------------------------------------------------------------------
+
 PROCESSOR 18F57Q84
 
 # 1 "./bt_config.inc" 1
@@ -152,7 +153,197 @@ PROCESSOR 18F57Q84
 
 ; CONFIG35
   CONFIG CRCERESL = hFF ; Non-Boot Sector Expected Result for CRC on boot bits 7-0 (Bits 7:0 of CRCERES are 0xFF)
-# 10 "P1-Corrimiento_Leds.s" 2
+# 11 "P1-Corrimiento_Leds.s" 2
+# 1 "./delays.inc" 1
+;-------------------------------------------------------------------------------
+; @file : delays.inc
+; @brief : Librería para delays (retardos) desde 10us hasta 250ms||Frequency = 4MHz||1Tcy=1us
+; @brief : Product Version: MPLAB X IDE v6.00
+; @date : 20/11/2022
+; @author: PURIZACA DEDIOS LUIS ANTONIO
+;-------------------------------------------------------------------------------
+
+PSECT udata_acs
+;reserva 1 byte en acces ram
+contador1: DS 1
+contador2: DS 1
+PSECT code
+# 33 "./delays.inc"
+;_______________________________________________________________________________
+;______________________RETARDOS ES us___________________________________________
+;_______________________________________________________________________________
+Delay_10us: ; 2 Tcy
+    CALL Delay_6u,1 ; 6 Tcy
+RETURN ; 2 Tcy
+;_______________________________________________________________________________
+Delay_25us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 4 ; + 1 Tcy | Se carga el valor de 4
+    MOVWF contador1,0 ; + 1 Tcy | coloca "4" a la variable "contador1". A traves de Acces Bank
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    GOTO Delay_us ; + 2 Tcy | Se dirige a la función "Delay_us", para ejecutarla con el valor de 4
+;_______________________________________________________________________________
+Delay_50us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 10 ; + 1 Tcy | Se carga el valor de 10
+    MOVWF contador1,0 ; + 1 Tcy | coloca "10" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_us,1 ; + 2 Tcy | llama y ejecuta "Delay_us" con el valor de 10. Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_100us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 23 ; + 1 Tcy | Se carga el valor de 23
+    MOVWF contador1,0 ; + 1 Tcy | coloca "23" a la variable "contador1". A traves de Acces Bank
+    GOTO Delay_us ; + 2 Tcy | Se dirige a la función "Delay_us", para ejecutarla con el valor de 23
+;_______________________________________________________________________________
+Delay_200us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 48 ; + 1 Tcy | Se carga el valor de 48
+    MOVWF contador1,0 ; + 1 Tcy | coloca "48" a la variable "contador1". A traves de Acces Bank
+    GOTO Delay_us ; + 2 Tcy | Se dirige a la función "Delay_us", para ejecutarla con el valor de 48
+;_______________________________________________________________________________
+Delay_250us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 60 ; + 1 Tcy | Se carga el valor de 60
+    MOVWF contador1,0 ; + 1 Tcy | coloca "60" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_us,1 ; + 2 Tcy | llama y ejecuta "Delay_us" con el valor de 60. Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_500us: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 123 ; + 1 Tcy | Se carga el valor de 123
+    MOVWF contador1,0 ; + 1 Tcy | coloca "123" a la variable "contador1". A traves de Acces Bank
+    GOTO Delay_us ; + 2 Tcy | Se dirige a "Delay_us", para ejecutarla con el valor de 123
+;_______________________________________________________________________________
+;____________________RETARDOS EN ms_____________________________________________
+;_______________________________________________________________________________
+; A = variable del bucle exterior = 1
+; B = variable del bucle interior = 247
+; T = [6+(B+((B-1)+3)+(2(B-1))+3+1+2)] = [ 4 B + 12 ] Tcy
+Delay_1ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 1 ; + 1 Tcy | Se carga el valor de 1
+    MOVWF contador2,0 ; + 1 Tcy
+Ext_loop1ms: ;
+    MOVLW 247 ; + 1 Tcy | Se carga el valor de 247
+    MOVWF contador1,0 ; + 1 Tcy | coloca "247" a la variable "contador1". A traves de Acces Bank
+Int_loop1ms: ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    DECFSZ contador1,1,0 ; + [(B-1)+3] Tcy |Decrementa y salta cuando es igual a 0| Almacenamos el resultado en f.
+    GOTO Int_loop1ms ; + [ 2 ( B - 1 ) ] Tcy | Se dirige a la funcion "Int_loop1ms"
+    DECFSZ contador2,1,0 ; + 3 Tcy | Decrementa y salta cuando es igual a 0 | Almacenamos el resultado en f.
+    GOTO Ext_loop1ms ; + [ (k2-1) * 2 ] Tcy | Se dirige a la funcion "Ext_loop1ms"
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_5ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    MOVLW 5 ; + 1 Tcy | Se carga el valor de 5
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    MOVWF contador1,0 ; + 1 Tcy | coloca "5" a la variable "contador1". A traves de Acces Bank
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    CALL Delay_ms,1 ; + 2 Tcy | llamar y ejecutar "Delay_ms" con el valor de 5 . Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_10ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    MOVLW 10 ; + 1 Tcy | Se carga el valor de 10
+    MOVWF contador1,0 ; + 1 Tcy | coloca "5" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,1 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 10. Se conservan los registros
+    CALL Delay_10us,1 ; + 2 Tcy | llama y ejecuta "Delay_10us". Se conservan los registros
+    CALL Delay_6u,1 ; + 2 Tcy | llama y ejecuta "Delay_6us". Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_25ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 25 ; + 1 Tcy | Se carga el valor de 25
+    MOVWF contador1,0 ; + 1 Tcy | coloca "25" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,0 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 25. No se conservan los registros
+    CALL Delay_50us,1 ; + 2 Tcy | llama y ejecuta "Delay_50us". Se conservan los registros
+    CALL Delay_10us,1 ; + 2 Tcy | llama y ejecuta "Delay_10us". Se conservan los registros
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_50ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 50 ; + 1 Tcy | Se carga el valor de 50
+    MOVWF contador1,0 ; + 1 Tcy | coloca "50" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,1 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 50. Se conservan los registros
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    CALL Delay_10us,1 ; + 2 Tcy | llama y ejecuta "Delay_10us". Se conservan los registros
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    CALL Delay_100us,1 ; + 2 Tcy | llama y ejecuta "Delay_100us". Se conservan los registros
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    CALL Delay_25us,1 ; + 2 Tcy | llama y ejecuta "Delay_25us". Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_100ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    NOP ; + 1 Tcy (No ejecuta nada, pero aniade 1 Tcy)
+    MOVLW 100 ; + 1 Tcy | Se carga el valor de 100
+    MOVWF contador1,0 ; + 1 Tcy | coloca "100" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,1 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 100. Se conservan los registros
+    CALL Delay_200us,1 ; + 2 Tcy | llama y ejecuta "Delay_200us". Se conservan los registros
+    CALL Delay_50us,1 ; + 2 Tcy | llama y ejecuta "Delay_50us". Se conservan los registros
+    CALL Delay_25us,1 ; + 2 Tcy | llama y ejecuta "Delay_25us". Se conservan los registros
+    CALL Delay_6u,1 ; + 2 Tcy | llama y ejecuta "Delay_6u". Se conservan los registros
+    CALL Delay_6u,1 ; + 2 Tcy | llama y ejecuta "Delay_6u". Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_200ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 200 ; + 1 Tcy | Se carga el valor de 200
+    MOVWF contador1,0 ; + 1 Tcy | coloca "200" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,1 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 200. Se conservan los registros
+    CALL Delay_538u,1 ; + 2 Tcy | llama y ejecuta "Delay_538us". Se conservan los registros
+    CALL Delay_50us,1 ; + 2 Tcy | llama y ejecuta "Delay_50us". Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_250ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 250 ; + 1 Tcy | Se carga el valor de 250
+    MOVWF contador1,0 ; + 1 Tcy | coloca "250" a la variable "contador1". A traves de Acces Bank
+    CALL Delay_ms,1 ; + 2 Tcy | llama y ejecuta "Delay_ms" con el valor de 250. Se conservan los registros
+    CALL Delay_538u,1 ; + 2 Tcy | llama y ejecuta "Delay_538us". Se conservan los registros
+    CALL Delay_200us,1 ; + 2 Tcy | llama y ejecuta "Delay_200us". Se conservan los registros
+RETURN ; + 2 Tcy para retornar
+
+
+
+
+
+
+Delay_us: ;
+    NOP ; k Tcy | (No ejecuta nada, pero aniade 1 Tcy por cada vuelta del bucle)
+    DECFSZ contador1,1,0 ; [(k-1)+3] Tcy | Decrementa y salta cuando es igual a 0|Almacena el resultado en f.
+    GOTO Delay_us ; [ 2 k - 2 ] Tcy | Se dirige a la funcion "Delay_us"
+RETURN ; 2 Tcy para retornar
+;_______________________________________________________________________________
+
+
+
+
+
+
+
+Delay_ms: ; + 2 Tcy (al hacer el llamado "CALL")
+    MOVWF contador2,0 ; + 1 Tcy | coloca el valor de "A" a la variable "contador1". A traves de Acces Bank
+Out_loop: ;
+    MOVLW 248 ; A Tcy | se carga el valor de 248
+    MOVWF contador1,0 ; A Tcy | el valor de "B" (fijado como 248) pasa a "contador1". A traves de Acces Bank
+In_loop:
+    NOP ; [ A B ] Tcy |(No ejecuta nada, pero aniade 1 Tcy por cada vuelta del bucle)
+    DECFSZ contador1,1,0 ; [(3+(B-1)) A] Tcy | Decrementa y salta cuando es igual a 0 |Almacena el resultado en f.
+    GOTO In_loop ; [ 2 A ( B - 1 ) ] Tcy | Se dirige a la funcion "In_loop"
+    DECFSZ contador2,1,0 ; [ 3 + ( A - 1 )] Tcy | Decrementa y salta cuando es igual a 0 |Almacena el resultado en f.
+    GOTO Out_loop ; [ 2 ( A - 1 ) ] Tcy | Se dirige a la funcion "Out_loop"
+    NOP ; 1 Tcy | ( No ejecuta nada, pero aniade 1 Tcy )
+    RETURN ; 2 Tcy para retornar
+;_______________________________________________________________________________
+;Funciones usadas para completar los ciclos y así ganar precision:
+
+Delay_538u: ; 2 Tcy (al hacer el llamado "CALL")
+    MOVLW 132 ; 1 Tcy | se carga el valor de 132
+    MOVWF contador1,0 ; 1 Tcy |Se carga el valor de "132" en "contador1" . A traves de Acces Bank
+    CALL Delay_us,1 ; 2 Tcy | llama y ejecuta "Delay_us" con el valor de 132. Se conservan los registros
+RETURN ; 2 Tcy para retornar
+;_______________________________________________________________________________
+Delay_6u: ; 2 Tcy (al hacer el llamado "CALL")
+    NOP ; 1 Tcy ( No ejecuta nada, pero aniade 1 Tcy )
+    NOP ; 1 Tcy ( No ejecuta nada, pero aniade 1 Tcy )
+RETURN ; 2 Tcy para retornar
+# 12 "P1-Corrimiento_Leds.s" 2
 # 1 "C:\\Program Files\\microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 1 3
 
 
@@ -47487,21 +47678,15 @@ stk_offset SET 0
 auto_size SET 0
 ENDM
 # 5 "C:\\Program Files\\microchip\\xc8\\v2.40\\pic\\include\\xc.inc" 2 3
-# 11 "P1-Corrimiento_Leds.s" 2
-
-
+# 13 "P1-Corrimiento_Leds.s" 2
 PSECT udata_acs
 ;reserva 1 byte en acces ram
-contador1: DS 1
-contador2: DS 1
-
+count1: DS 1
+count2: DS 1
 PSECT resetVect,class=CODE,reloc=2
-
 resetVect:
     goto Main
-
 PSECT CODE
-
 Main:
     CALL Config_OSC,1
     CALL Config_Port,1
@@ -47510,138 +47695,142 @@ Main:
     MOVWF TRISC
     MOVWF TRISE
     BCF STATUS,5
-
-Off:
-    CLRF LATC
+    CLRF LATC ;Limpeza de puertos
     CLRF LATE
     BSF LATF,3,1
+
+
+corrimiento:
+    Imp:
+    MOVLW 00000001B ; Se carga el valor en W
+    MOVWF LATC ; Se escribe el valor de W en el puerto C
+    MOVWF LATE,1 ; Se escribe el valor de W en el puerto E|Indica que el desplazamiento es impar
+    CALL Esperar_250,1 ; Esperar 250ms
+
+    RLNCF LATC,1,0 ; Desplaza a la izquierda el bit escrito del puerto C
+    ; Esperar 250ms:
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    ;_____________________
+    Par:
+    MOVLW 00000010B ; Se carga el valor en W
+    MOVWF LATE,1 ; Se escribe el valor de W en el puerto E|Indica que el desplazamiento es par
+
+    RLNCF LATC,1,0 ; Desplaza a la izquierda el contenido del puerto C
+    ; Esperar ( 250 + 250 )ms = 500 ms (Aprox.)
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    RLNCF LATC,1,0
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+    GOTO corrimiento
+B_press: ; Se realiza el llamado en delay "Esperar_250"
+    BSF LATF,3,1 ; Led off (led_apoyo, para visualizar cuando este pausado el desplazamiento)
     BTFSC PORTA,3,0 ; PORTA<3> = 0? - BUTTON PRESS?
-    GOTO Off
-    CALL Button,1
-    GOTO ON
-ON:
-
-    MOVLW 00000001B
-    MOVWF PORTC
-    MOVLW 00000010B
-    MOVWF PORTE,1
-    CALL Esperar_250,1
-
-    MOVLW 00000010B
-    MOVWF PORTC
-    MOVLW 00000001B
-    MOVWF PORTE
-    CALL Esperar_250,1
-
-    MOVLW 00000100B
-    MOVWF PORTC
-    MOVLW 00000010B
-    MOVWF PORTE,1
-    CALL Esperar_250,1
-
-    MOVLW 00001000B
-    MOVWF PORTC
-    MOVLW 00000001B
-    MOVWF PORTE
-    CALL Esperar_250,1
-
-    MOVLW 00010000B
-    MOVWF PORTC
-    MOVLW 00000010B
-    MOVWF PORTE,1
-    CALL Esperar_250,1
-
-    MOVLW 00100000B
-    MOVWF PORTC
-    MOVLW 00000001B
-    MOVWF PORTE
-    CALL Esperar_250,1
-
-    MOVLW 01000000B
-    MOVWF PORTC
-    MOVLW 00000010B
-    MOVWF PORTE,1
-    CALL Esperar_250,1
-
-    MOVLW 10000000B
-    MOVWF PORTC
-    MOVLW 00000001B
-    MOVWF PORTE
-    CALL Esperar_250,1
-
-    GOTO ON
-
-B_press:
-    BSF LATF,3,1 ; Led on
+    RETURN ; Si no se presione, retornará al loop "Esperar_250"; En cso se pulse, salta, abandonando el loop
+    CALL Delay_25ms,1 ; Para evitar el rebote mecanico
+Pause: ; Se pausa el desplazamiento y se mantiene encendido el led en el que se encontraba
     BTFSC PORTA,3,0 ; PORTA<3> = 0? - BUTTON PRESS?
-    RETURN
-    CALL Button,1
+    GOTO Pause ; Mientras no se pulse, se mantendra el loop; cuando se pulsa, se salta y sale del loop
+    CALL Delay_25ms,1 ; Para evitar el rebote mecanico
+    MOVLW 00000001B ; Se carga el valor en el W
+    CPFSEQ LATE ; Se compara W con el puerto E para conocer si antes de pausar estaba en desplazamiento par o impar
+    GOTO RegresarP ; Cuando son diferentes, continua, se dirige al caso cuando es par
+    GOTO RegresarimP ; Cuando son iguales, salta una linea, se dirige al caso cuando es impar
+RegresarP: ; Actuará como el caso de desplazamiento par hasta que se complete el byte
+    RLNCF LATC,1,0 ; Desplaza a la izquierda el bit del puerto C (A partir de donde se quedo)
+    ; Esperar ( 250 + 250 )ms = 500 ms (Aprox.)
+    CALL Esperar_250,1
+    CALL Esperar_250,1
+
+    MOVLW 10000000B ; Se carga el valor en el W
+    CPFSEQ LATC ; Se compara W con el puerto C para conocer si llegó al final del byte
+    GOTO RegresarP ; Si son diferentes, se genera un loop, que desplazara hasta que sean iguales
+    GOTO Imp ; Si son iguales, se dirige al desplazamiento principal - caso impar
+RegresarimP: ; Actuará como el caso de desplazamiento impar hasta que se complete el byte
+    RLNCF LATC,1,0 ; Desplaza a la izquierda el bit del puerto C (A partir de donde se quedo)
+    CALL Esperar_250,1 ; Esperar 250 ms
+
+    MOVLW 10000000B ; Se carga el valor en el W
+    CPFSEQ LATC ; Se compara W con el puerto C para conocer si llegó al final del byte
+    GOTO RegresarimP ; Si son diferentes, se genera un loop, que desplazara hasta que sean iguales
+    GOTO Par ; Si son iguales, se dirige al desplazamiento principal - caso par
 
 
-Fin:
-    BCF LATF,3,1
-    BTFSC PORTA,3,0 ; PORTA<3> = 0? - BUTTON PRESS?
-    GOTO Fin
-    CALL Button,1
-    GOTO Off
-
-
-
-
-Config_OSC: ;Configuración del oscilador Interno a una frecuencia de 8MHz
-    BANKSEL OSCCON1
-    MOVLW 0x64 ;seleccionamos el bloque del osc interno con un div:1
-    MOVWF OSCCON1
-    MOVLW 0x02 ;seleccionamos una freciencoa de 8MHz
-    MOVWF OSCFRQ
+Config_OSC: ; Oscilador Interno a 8MHz
+    BANKSEL OSCCON1 ; Seleccionar banco
+    MOVLW 0x64 ; Osc interno con un div:1
+    MOVWF OSCCON1 ;Cargar valor
+    MOVLW 0x02 ; seleccionamos una freciencoa de 4MHz
+    MOVWF OSCFRQ ; cargar valor
     RETURN
 
 Config_Port: ;((PCON0) and 0FFh), 1, a-LAT-ANSEL-TRIS LED:((PORTF) and 0FFh), 3, a, BUTTON:((PORTA) and 0FFh), 3, a
-
     ;Config button
-    BANKSEL PORTA
-    CLRF PORTA,1
-    CLRF ANSELA,1
-    BSF TRISA,3,1
+    BANKSEL PORTA ; seleccionar banco
+    CLRF PORTA,1 ; seleccion puerto
+    CLRF ANSELA,1 ; definir como analogico
+    BSF TRISA,3,1 ; configurar el pin 3 del puerto A como entrada
     BSF WPUA,3,1 ; RESISTENCIA PULL-UP ACTIVADA DEL PIN ((PORTA) and 0FFh), 3, a
 
-
-Button: ; + 2 Tcy (al hacer el llamado "CALL")
-    MOVLW 20 ; + 1 Tcy
-    MOVWF contador1,0 ; + 1 Tcy
-    CALL Delay_ms,1 ; + 2 Tcy
-RETURN
-
-Esperar_250: ; + 2 Tcy
-    MOVLW 29 ; + 1 Tcy
-    MOVWF contador1,0 ; + 1 Tcy
+Esperar_250: ; T = [6+5X+9XY]
+    MOVLW 8 ;13 ; + 1 Tcy
+    MOVWF count1,0 ; + 1 Tcy
     CALL Delays,1 ; + 2 Tcy
-RETURN
-
-Delay_ms: ; + 2 Tcy
-    MOVWF contador2,0 ; + 1 Tcy
-Out_loop: ;
-    MOVLW 249 ; A Tcy
-    MOVWF contador1,0 ; A Tcy
-In_loop:
-    NOP ; [ A B ] Tcy
-    DECFSZ contador1,1,0 ; [(3+(B-1)) A] Tcy
-    GOTO In_loop ; [ 2 A ( B - 1 ) ] Tcy
-    DECFSZ contador2,1,0 ; [ 3 + ( A - 1 )] Tcy
-    GOTO Out_loop ; [ 2 ( A - 1 ) ] Tcy
-    NOP ; 1 Tcy
-    RETURN ; 2 Tcy
+RETURN ;+ 2 Tcy
 
 Delays: ; + 2 Tcy
-    MOVWF contador2,0 ; + 1 Tcy | coloca el valor de "A" a la variable "contador1". A traves de Acces Bank
+    MOVWF count2,0 ; + 1 Tcy | coloca el valor de "A" a la variable "contador1". A traves de Acces Bank
 Outloop: ;
     MOVLW 219 ; A Tcy
-    MOVWF contador1,0 ; A Tcy
+    MOVWF count1,0 ; A Tcy
 Inloop:
     CALL B_press,1 ; [ 6 A B ] Tcy
-    DECFSZ contador1,1,0 ; [(3+(B-1)) A] Tcy
+    DECFSZ count1,1,0 ; [(3+(B-1)) A] Tcy
     GOTO Inloop ; [ 2 A ( B - 1 ) ] Tcy
-    DECFSZ contador2,1,0 ; [ 3 + ( A - 1 )] Tcy
+    DECFSZ count2,1,0 ; [ 3 + ( A - 1 )] Tcy
     GOTO Outloop ; [ 2 ( A - 1 ) ] Tcy
     NOP ; 1 Tcy
     RETURN ; 2

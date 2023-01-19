@@ -12,9 +12,10 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $build/default/production/P1-Corrimiento_Leds.o
-CODE - 0 0 0 102 1 1
-resetVect CODE 0 1FFFC 1FFFC 4 1 2
-udata_acs COMRAM 1 500 500 2 1 1
+CODE - 0 0 0 128 1 1
+code CODE 0 1FEDA 1FEDA 126 1 2
+resetVect CODE 0 1FED6 1FED6 4 1 2
+udata_acs COMRAM 1 500 500 4 1 1
 config CONFIG 4 300000 300000 23 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -23,17 +24,17 @@ config CONFIG 4 300000 300000 23 1 1
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
 RAM 560-36FF 1
-SFR 102-4FF 1
+SFR 128-4FF 1
 SFR 3700-3FFF 1
 BANK5 560-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 102-1FFFB 1
+CONST 128-1FED5 1
 IDLOC 200000-20003F 1
-SMALLCONST 4000-1FFFB 1
-CODE 102-1FFFB 1
+SMALLCONST 4000-1FED5 1
+CODE 128-1FED5 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
@@ -80,13 +81,13 @@ BANK52 3400-34FF 1
 BANK53 3500-35FF 1
 BANK54 3600-36FF 1
 BIGRAM 500-36FF 1
-BIGSFR 102-4FF 1
+BIGSFR 128-4FF 1
 BIGSFR 3700-3FFF 1
-COMRAM 502-55F 1
+COMRAM 504-55F 1
 CONFIG 300023-300023 1
 EEDATA 380000-3803FF 1
 MEDIUMCONST 4000-FFFF 1
-MEDIUMCONST 14000-1FFFB 1
+MEDIUMCONST 14000-1FED5 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -101,111 +102,223 @@ MEDIUMCONST 14000-1FFFB 1
 # All other numeric values are in decimal.
 %LINETAB
 $build/default/production/P1-Corrimiento_Leds.o
-0 CODE ABS >26:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-4 CODE ABS >27:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-8 CODE ABS >28:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-A CODE ABS >29:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-C CODE ABS >30:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-E CODE ABS >31:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-10 CODE ABS >32:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-12 CODE ABS >35:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-14 CODE ABS >36:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-16 CODE ABS >37:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-18 CODE ABS >38:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-1A CODE ABS >39:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-1E CODE ABS >40:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+0 CODE ABS >22:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4 CODE ABS >23:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+8 CODE ABS >24:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A CODE ABS >25:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C CODE ABS >26:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E CODE ABS >27:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+10 CODE ABS >28:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+12 CODE ABS >29:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+14 CODE ABS >30:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+16 CODE ABS >31:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+18 CODE ABS >36:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1A CODE ABS >37:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1C CODE ABS >38:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1E CODE ABS >39:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 22 CODE ABS >41:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-26 CODE ABS >44:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+24 CODE ABS >43:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 28 CODE ABS >45:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 2A CODE ABS >46:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-2C CODE ABS >47:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 2E CODE ABS >48:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-32 CODE ABS >50:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+30 CODE ABS >49:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 34 CODE ABS >51:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 36 CODE ABS >52:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-38 CODE ABS >53:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 3A CODE ABS >54:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-3E CODE ABS >56:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+3C CODE ABS >55:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 40 CODE ABS >57:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 42 CODE ABS >58:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-44 CODE ABS >59:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 46 CODE ABS >60:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-4A CODE ABS >62:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-4C CODE ABS >63:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-4E CODE ABS >64:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-50 CODE ABS >65:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-52 CODE ABS >66:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-56 CODE ABS >68:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-58 CODE ABS >69:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-5A CODE ABS >70:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-5C CODE ABS >71:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-5E CODE ABS >72:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-62 CODE ABS >74:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-64 CODE ABS >75:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-66 CODE ABS >76:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-68 CODE ABS >77:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+48 CODE ABS >61:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4C CODE ABS >64:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+4E CODE ABS >65:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+50 CODE ABS >67:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+52 CODE ABS >69:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+56 CODE ABS >70:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+5A CODE ABS >72:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+5C CODE ABS >73:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+60 CODE ABS >74:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+64 CODE ABS >76:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+66 CODE ABS >77:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 6A CODE ABS >78:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 6E CODE ABS >80:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
 70 CODE ABS >81:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-72 CODE ABS >82:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-74 CODE ABS >83:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-76 CODE ABS >84:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-7A CODE ABS >86:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-7C CODE ABS >87:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-7E CODE ABS >88:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-80 CODE ABS >89:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-82 CODE ABS >90:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-86 CODE ABS >92:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-8A CODE ABS >95:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-8C CODE ABS >96:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-8E CODE ABS >97:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-90 CODE ABS >98:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-94 CODE ABS >102:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-96 CODE ABS >103:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-98 CODE ABS >104:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-9C CODE ABS >105:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-A0 CODE ABS >106:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-A4 CODE ABS >112:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-A6 CODE ABS >113:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-A8 CODE ABS >114:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-AA CODE ABS >115:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-AC CODE ABS >116:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-AE CODE ABS >117:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-B0 CODE ABS >122:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-B2 CODE ABS >123:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-B4 CODE ABS >124:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-B6 CODE ABS >125:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-B8 CODE ABS >126:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-BA CODE ABS >130:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-BC CODE ABS >131:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-BE CODE ABS >132:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-C2 CODE ABS >133:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-C4 CODE ABS >136:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-C6 CODE ABS >137:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-C8 CODE ABS >138:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-CC CODE ABS >139:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-CE CODE ABS >142:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-D0 CODE ABS >144:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-D2 CODE ABS >145:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-D4 CODE ABS >147:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-D6 CODE ABS >148:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-D8 CODE ABS >149:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-DC CODE ABS >150:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-DE CODE ABS >151:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-E2 CODE ABS >152:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-E4 CODE ABS >153:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-E6 CODE ABS >156:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-E8 CODE ABS >158:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-EA CODE ABS >159:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-EC CODE ABS >161:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-F0 CODE ABS >162:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-F2 CODE ABS >163:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-F6 CODE ABS >164:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-F8 CODE ABS >165:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-FC CODE ABS >166:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-FE CODE ABS >167:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-100 CODE ABS >168:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
-1FFFC resetVect CODE >21:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+74 CODE ABS >82:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+78 CODE ABS >84:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+7A CODE ABS >85:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+7E CODE ABS >86:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+82 CODE ABS >88:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+84 CODE ABS >89:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+88 CODE ABS >90:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+8C CODE ABS >92:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+8E CODE ABS >93:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+92 CODE ABS >94:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+96 CODE ABS >96:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+98 CODE ABS >97:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+9C CODE ABS >98:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A0 CODE ABS >99:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A4 CODE ABS >101:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A6 CODE ABS >102:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+A8 CODE ABS >103:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+AA CODE ABS >104:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+AE CODE ABS >106:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B0 CODE ABS >107:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B4 CODE ABS >108:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+B8 CODE ABS >109:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+BA CODE ABS >110:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+BC CODE ABS >111:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C0 CODE ABS >112:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C4 CODE ABS >114:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+C6 CODE ABS >116:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+CA CODE ABS >117:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+CE CODE ABS >119:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D0 CODE ABS >120:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D2 CODE ABS >121:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+D6 CODE ABS >122:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+DA CODE ABS >124:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+DC CODE ABS >125:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E0 CODE ABS >127:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E2 CODE ABS >128:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E4 CODE ABS >129:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+E8 CODE ABS >130:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+EC CODE ABS >134:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+EE CODE ABS >135:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+F0 CODE ABS >136:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+F2 CODE ABS >137:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+F4 CODE ABS >138:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+F6 CODE ABS >139:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+F8 CODE ABS >143:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+FA CODE ABS >144:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+FC CODE ABS >145:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+FE CODE ABS >146:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+100 CODE ABS >147:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+102 CODE ABS >150:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+104 CODE ABS >151:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+106 CODE ABS >152:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+10A CODE ABS >153:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+10C CODE ABS >156:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+10E CODE ABS >158:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+110 CODE ABS >159:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+112 CODE ABS >161:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+116 CODE ABS >162:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+118 CODE ABS >163:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+11C CODE ABS >164:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+11E CODE ABS >165:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+122 CODE ABS >166:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+124 CODE ABS >167:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+126 CODE ABS >168:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1FED6 resetVect CODE >19:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimiento_Leds.s
+1FEDA code CODE >37:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEDE code CODE >38:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEE0 code CODE >41:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEE2 code CODE >42:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEE4 code CODE >43:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEE6 code CODE >44:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEEA code CODE >47:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEEC code CODE >48:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEEE code CODE >49:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEF2 code CODE >50:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEF4 code CODE >53:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEF6 code CODE >54:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEF8 code CODE >55:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEFC code CODE >58:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FEFE code CODE >59:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF00 code CODE >60:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF04 code CODE >63:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF06 code CODE >64:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF08 code CODE >65:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF0C code CODE >66:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF0E code CODE >69:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF10 code CODE >70:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF12 code CODE >71:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF16 code CODE >79:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF18 code CODE >80:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF1A code CODE >82:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF1C code CODE >83:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF1E code CODE >85:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF20 code CODE >86:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF22 code CODE >87:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF26 code CODE >88:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF28 code CODE >89:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF2C code CODE >90:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF2E code CODE >91:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF30 code CODE >94:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF32 code CODE >95:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF34 code CODE >96:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF36 code CODE >97:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF38 code CODE >98:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF3A code CODE >99:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF3E code CODE >100:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF40 code CODE >103:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF42 code CODE >104:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF44 code CODE >105:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF46 code CODE >106:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF48 code CODE >107:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF4C code CODE >108:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF50 code CODE >109:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF54 code CODE >110:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF56 code CODE >113:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF58 code CODE >114:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF5A code CODE >115:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF5E code CODE >116:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF62 code CODE >117:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF66 code CODE >118:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF68 code CODE >119:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF6A code CODE >120:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF6C code CODE >121:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF6E code CODE >124:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF70 code CODE >125:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF72 code CODE >126:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF76 code CODE >127:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF78 code CODE >128:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF7C code CODE >129:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF7E code CODE >130:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF82 code CODE >131:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF84 code CODE >132:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF88 code CODE >133:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF8A code CODE >136:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF8C code CODE >137:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF8E code CODE >138:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF90 code CODE >139:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF94 code CODE >140:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF98 code CODE >141:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FF9C code CODE >142:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFA0 code CODE >143:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFA4 code CODE >144:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFA8 code CODE >145:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFAA code CODE >148:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFAC code CODE >149:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFAE code CODE >150:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFB2 code CODE >151:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFB6 code CODE >152:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFBA code CODE >153:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFBC code CODE >156:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFBE code CODE >157:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFC0 code CODE >158:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFC4 code CODE >159:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFC8 code CODE >160:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFCC code CODE >161:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFCE code CODE >169:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFD0 code CODE >170:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFD2 code CODE >171:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFD6 code CODE >172:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFD8 code CODE >182:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFDA code CODE >184:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFDC code CODE >185:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFDE code CODE >187:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFE0 code CODE >188:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFE2 code CODE >189:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFE6 code CODE >190:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFE8 code CODE >191:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFEC code CODE >192:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFEE code CODE >193:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFF0 code CODE >198:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFF2 code CODE >199:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFF4 code CODE >200:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFF8 code CODE >201:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFFA code CODE >204:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFFC code CODE >205:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
+1FFFE code CODE >206:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X/delays.inc
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -219,134 +332,134 @@ FE CODE ABS >167:E:\LUIS\uC1_2022_purizaca_luis\P1-Corrimiento_Leds.X\P1-Corrimi
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 __Hspace_0 20000 0 ABS 0 - -
-__Hspace_1 502 0 ABS 0 - -
+__Hspace_1 504 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 600023 0 ABS 0 - -
-__Hudata_bank5 102 0 ABS 0 udata_bank5 -
-__Hudata_bank6 102 0 ABS 0 udata_bank6 -
-__Hudata_bank7 102 0 ABS 0 udata_bank7 -
-__Hudata_bank8 102 0 ABS 0 udata_bank8 -
-__Hudata_bank9 102 0 ABS 0 udata_bank9 -
-__Hudata_bank10 102 0 ABS 0 udata_bank10 -
-__Hudata_bank11 102 0 ABS 0 udata_bank11 -
-__Hudata_bank12 102 0 ABS 0 udata_bank12 -
-__Hudata_bank13 102 0 ABS 0 udata_bank13 -
-__Hudata_bank14 102 0 ABS 0 udata_bank14 -
-__Hudata_bank15 102 0 ABS 0 udata_bank15 -
-__Hudata_bank16 102 0 ABS 0 udata_bank16 -
-__Hudata_bank17 102 0 ABS 0 udata_bank17 -
-__Hudata_bank18 102 0 ABS 0 udata_bank18 -
-__Hudata_bank19 102 0 ABS 0 udata_bank19 -
-__Hudata_bank20 102 0 ABS 0 udata_bank20 -
-__Hudata_bank21 102 0 ABS 0 udata_bank21 -
-__Hudata_bank22 102 0 ABS 0 udata_bank22 -
-__Hudata_bank23 102 0 ABS 0 udata_bank23 -
-__Hudata_bank24 102 0 ABS 0 udata_bank24 -
-__Hudata_bank25 102 0 ABS 0 udata_bank25 -
-__Hudata_bank26 102 0 ABS 0 udata_bank26 -
-__Hudata_bank27 102 0 ABS 0 udata_bank27 -
-__Hudata_bank28 102 0 ABS 0 udata_bank28 -
-__Hudata_bank29 102 0 ABS 0 udata_bank29 -
-__Hudata_bank30 102 0 ABS 0 udata_bank30 -
-__Hudata_bank31 102 0 ABS 0 udata_bank31 -
-__Hudata_bank32 102 0 ABS 0 udata_bank32 -
-__Hudata_bank33 102 0 ABS 0 udata_bank33 -
-__Hudata_bank34 102 0 ABS 0 udata_bank34 -
-__Hudata_bank35 102 0 ABS 0 udata_bank35 -
-__Hudata_bank36 102 0 ABS 0 udata_bank36 -
-__Hudata_bank37 102 0 ABS 0 udata_bank37 -
-__Hudata_bank38 102 0 ABS 0 udata_bank38 -
-__Hudata_bank39 102 0 ABS 0 udata_bank39 -
-__Hudata_bank40 102 0 ABS 0 udata_bank40 -
-__Hudata_bank41 102 0 ABS 0 udata_bank41 -
-__Hudata_bank42 102 0 ABS 0 udata_bank42 -
-__Hudata_bank43 102 0 ABS 0 udata_bank43 -
-__Hudata_bank44 102 0 ABS 0 udata_bank44 -
-__Hudata_bank45 102 0 ABS 0 udata_bank45 -
-__Hudata_bank46 102 0 ABS 0 udata_bank46 -
-__Hudata_bank47 102 0 ABS 0 udata_bank47 -
-__Hudata_bank48 102 0 ABS 0 udata_bank48 -
-__Hudata_bank49 102 0 ABS 0 udata_bank49 -
-__Hudata_bank50 102 0 ABS 0 udata_bank50 -
-__Hudata_bank51 102 0 ABS 0 udata_bank51 -
-__Hudata_bank52 102 0 ABS 0 udata_bank52 -
-__Hudata_bank53 102 0 ABS 0 udata_bank53 -
-__Hudata_bank54 102 0 ABS 0 udata_bank54 -
+__Hudata_bank5 128 0 ABS 0 udata_bank5 -
+__Hudata_bank6 128 0 ABS 0 udata_bank6 -
+__Hudata_bank7 128 0 ABS 0 udata_bank7 -
+__Hudata_bank8 128 0 ABS 0 udata_bank8 -
+__Hudata_bank9 128 0 ABS 0 udata_bank9 -
+__Hudata_bank10 128 0 ABS 0 udata_bank10 -
+__Hudata_bank11 128 0 ABS 0 udata_bank11 -
+__Hudata_bank12 128 0 ABS 0 udata_bank12 -
+__Hudata_bank13 128 0 ABS 0 udata_bank13 -
+__Hudata_bank14 128 0 ABS 0 udata_bank14 -
+__Hudata_bank15 128 0 ABS 0 udata_bank15 -
+__Hudata_bank16 128 0 ABS 0 udata_bank16 -
+__Hudata_bank17 128 0 ABS 0 udata_bank17 -
+__Hudata_bank18 128 0 ABS 0 udata_bank18 -
+__Hudata_bank19 128 0 ABS 0 udata_bank19 -
+__Hudata_bank20 128 0 ABS 0 udata_bank20 -
+__Hudata_bank21 128 0 ABS 0 udata_bank21 -
+__Hudata_bank22 128 0 ABS 0 udata_bank22 -
+__Hudata_bank23 128 0 ABS 0 udata_bank23 -
+__Hudata_bank24 128 0 ABS 0 udata_bank24 -
+__Hudata_bank25 128 0 ABS 0 udata_bank25 -
+__Hudata_bank26 128 0 ABS 0 udata_bank26 -
+__Hudata_bank27 128 0 ABS 0 udata_bank27 -
+__Hudata_bank28 128 0 ABS 0 udata_bank28 -
+__Hudata_bank29 128 0 ABS 0 udata_bank29 -
+__Hudata_bank30 128 0 ABS 0 udata_bank30 -
+__Hudata_bank31 128 0 ABS 0 udata_bank31 -
+__Hudata_bank32 128 0 ABS 0 udata_bank32 -
+__Hudata_bank33 128 0 ABS 0 udata_bank33 -
+__Hudata_bank34 128 0 ABS 0 udata_bank34 -
+__Hudata_bank35 128 0 ABS 0 udata_bank35 -
+__Hudata_bank36 128 0 ABS 0 udata_bank36 -
+__Hudata_bank37 128 0 ABS 0 udata_bank37 -
+__Hudata_bank38 128 0 ABS 0 udata_bank38 -
+__Hudata_bank39 128 0 ABS 0 udata_bank39 -
+__Hudata_bank40 128 0 ABS 0 udata_bank40 -
+__Hudata_bank41 128 0 ABS 0 udata_bank41 -
+__Hudata_bank42 128 0 ABS 0 udata_bank42 -
+__Hudata_bank43 128 0 ABS 0 udata_bank43 -
+__Hudata_bank44 128 0 ABS 0 udata_bank44 -
+__Hudata_bank45 128 0 ABS 0 udata_bank45 -
+__Hudata_bank46 128 0 ABS 0 udata_bank46 -
+__Hudata_bank47 128 0 ABS 0 udata_bank47 -
+__Hudata_bank48 128 0 ABS 0 udata_bank48 -
+__Hudata_bank49 128 0 ABS 0 udata_bank49 -
+__Hudata_bank50 128 0 ABS 0 udata_bank50 -
+__Hudata_bank51 128 0 ABS 0 udata_bank51 -
+__Hudata_bank52 128 0 ABS 0 udata_bank52 -
+__Hudata_bank53 128 0 ABS 0 udata_bank53 -
+__Hudata_bank54 128 0 ABS 0 udata_bank54 -
 isa$xinst 0 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
-__Hedata 102 0 ABS 0 edata -
-__Hudata 102 0 ABS 0 udata -
+__Hedata 128 0 ABS 0 edata -
+__Hudata 128 0 ABS 0 udata -
 __Hconfig 300023 0 CONFIG 4 config -
-__Ledata 102 0 ABS 0 edata -
-__Ludata 102 0 ABS 0 udata -
-__HCODE 102 0 ABS 0 CODE -
-__Hcode 102 0 ABS 0 code -
-__Hdata 102 0 ABS 0 data -
+__Ledata 128 0 ABS 0 edata -
+__Ludata 128 0 ABS 0 udata -
+__HCODE 128 0 ABS 0 CODE -
+__Hcode 128 0 ABS 0 code -
+__Hdata 128 0 ABS 0 data -
 __LCODE 0 0 ABS 0 CODE -
-__Lcode 102 0 ABS 0 code -
-__Ldata 102 0 ABS 0 data -
+__Lcode 128 0 ABS 0 code -
+__Ldata 128 0 ABS 0 data -
 __S0 20000 0 ABS 0 - -
-__S1 502 0 ABS 0 - -
+__S1 504 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-__Ludata_bank10 102 0 ABS 0 udata_bank10 -
-__Ludata_bank11 102 0 ABS 0 udata_bank11 -
-__Ludata_bank12 102 0 ABS 0 udata_bank12 -
-__Ludata_bank13 102 0 ABS 0 udata_bank13 -
-__Ludata_bank14 102 0 ABS 0 udata_bank14 -
-__Ludata_bank15 102 0 ABS 0 udata_bank15 -
-__Ludata_bank16 102 0 ABS 0 udata_bank16 -
-__Ludata_bank17 102 0 ABS 0 udata_bank17 -
-__Ludata_bank18 102 0 ABS 0 udata_bank18 -
-__Ludata_bank19 102 0 ABS 0 udata_bank19 -
-__Ludata_bank20 102 0 ABS 0 udata_bank20 -
-__Ludata_bank21 102 0 ABS 0 udata_bank21 -
-__Ludata_bank22 102 0 ABS 0 udata_bank22 -
-__Ludata_bank23 102 0 ABS 0 udata_bank23 -
-__Ludata_bank24 102 0 ABS 0 udata_bank24 -
-__Ludata_bank25 102 0 ABS 0 udata_bank25 -
-__Ludata_bank26 102 0 ABS 0 udata_bank26 -
-__Ludata_bank27 102 0 ABS 0 udata_bank27 -
-__Ludata_bank28 102 0 ABS 0 udata_bank28 -
-__Ludata_bank29 102 0 ABS 0 udata_bank29 -
-__Ludata_bank30 102 0 ABS 0 udata_bank30 -
-__Ludata_bank31 102 0 ABS 0 udata_bank31 -
-__Ludata_bank32 102 0 ABS 0 udata_bank32 -
-__Ludata_bank33 102 0 ABS 0 udata_bank33 -
-__Ludata_bank34 102 0 ABS 0 udata_bank34 -
-__Ludata_bank35 102 0 ABS 0 udata_bank35 -
-__Ludata_bank36 102 0 ABS 0 udata_bank36 -
-__Ludata_bank37 102 0 ABS 0 udata_bank37 -
-__Ludata_bank38 102 0 ABS 0 udata_bank38 -
-__Ludata_bank39 102 0 ABS 0 udata_bank39 -
-__Ludata_bank40 102 0 ABS 0 udata_bank40 -
-__Ludata_bank41 102 0 ABS 0 udata_bank41 -
-__Ludata_bank42 102 0 ABS 0 udata_bank42 -
-__Ludata_bank43 102 0 ABS 0 udata_bank43 -
-__Ludata_bank44 102 0 ABS 0 udata_bank44 -
-__Ludata_bank45 102 0 ABS 0 udata_bank45 -
-__Ludata_bank46 102 0 ABS 0 udata_bank46 -
-__Ludata_bank47 102 0 ABS 0 udata_bank47 -
-__Ludata_bank48 102 0 ABS 0 udata_bank48 -
-__Ludata_bank49 102 0 ABS 0 udata_bank49 -
-__Ludata_bank50 102 0 ABS 0 udata_bank50 -
-__Ludata_bank51 102 0 ABS 0 udata_bank51 -
-__Ludata_bank52 102 0 ABS 0 udata_bank52 -
-__Ludata_bank53 102 0 ABS 0 udata_bank53 -
-__Ludata_bank54 102 0 ABS 0 udata_bank54 -
+__Ludata_bank10 128 0 ABS 0 udata_bank10 -
+__Ludata_bank11 128 0 ABS 0 udata_bank11 -
+__Ludata_bank12 128 0 ABS 0 udata_bank12 -
+__Ludata_bank13 128 0 ABS 0 udata_bank13 -
+__Ludata_bank14 128 0 ABS 0 udata_bank14 -
+__Ludata_bank15 128 0 ABS 0 udata_bank15 -
+__Ludata_bank16 128 0 ABS 0 udata_bank16 -
+__Ludata_bank17 128 0 ABS 0 udata_bank17 -
+__Ludata_bank18 128 0 ABS 0 udata_bank18 -
+__Ludata_bank19 128 0 ABS 0 udata_bank19 -
+__Ludata_bank20 128 0 ABS 0 udata_bank20 -
+__Ludata_bank21 128 0 ABS 0 udata_bank21 -
+__Ludata_bank22 128 0 ABS 0 udata_bank22 -
+__Ludata_bank23 128 0 ABS 0 udata_bank23 -
+__Ludata_bank24 128 0 ABS 0 udata_bank24 -
+__Ludata_bank25 128 0 ABS 0 udata_bank25 -
+__Ludata_bank26 128 0 ABS 0 udata_bank26 -
+__Ludata_bank27 128 0 ABS 0 udata_bank27 -
+__Ludata_bank28 128 0 ABS 0 udata_bank28 -
+__Ludata_bank29 128 0 ABS 0 udata_bank29 -
+__Ludata_bank30 128 0 ABS 0 udata_bank30 -
+__Ludata_bank31 128 0 ABS 0 udata_bank31 -
+__Ludata_bank32 128 0 ABS 0 udata_bank32 -
+__Ludata_bank33 128 0 ABS 0 udata_bank33 -
+__Ludata_bank34 128 0 ABS 0 udata_bank34 -
+__Ludata_bank35 128 0 ABS 0 udata_bank35 -
+__Ludata_bank36 128 0 ABS 0 udata_bank36 -
+__Ludata_bank37 128 0 ABS 0 udata_bank37 -
+__Ludata_bank38 128 0 ABS 0 udata_bank38 -
+__Ludata_bank39 128 0 ABS 0 udata_bank39 -
+__Ludata_bank40 128 0 ABS 0 udata_bank40 -
+__Ludata_bank41 128 0 ABS 0 udata_bank41 -
+__Ludata_bank42 128 0 ABS 0 udata_bank42 -
+__Ludata_bank43 128 0 ABS 0 udata_bank43 -
+__Ludata_bank44 128 0 ABS 0 udata_bank44 -
+__Ludata_bank45 128 0 ABS 0 udata_bank45 -
+__Ludata_bank46 128 0 ABS 0 udata_bank46 -
+__Ludata_bank47 128 0 ABS 0 udata_bank47 -
+__Ludata_bank48 128 0 ABS 0 udata_bank48 -
+__Ludata_bank49 128 0 ABS 0 udata_bank49 -
+__Ludata_bank50 128 0 ABS 0 udata_bank50 -
+__Ludata_bank51 128 0 ABS 0 udata_bank51 -
+__Ludata_bank52 128 0 ABS 0 udata_bank52 -
+__Ludata_bank53 128 0 ABS 0 udata_bank53 -
+__Ludata_bank54 128 0 ABS 0 udata_bank54 -
 __Lconfig 0 0 CONFIG 4 config -
 isa$std 1 0 ABS 0 - build/default/production/P1-Corrimiento_Leds.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__HresetVect 102 0 ABS 0 resetVect -
-__Ludata_bank5 102 0 ABS 0 udata_bank5 -
-__Ludata_bank6 102 0 ABS 0 udata_bank6 -
-__Ludata_bank7 102 0 ABS 0 udata_bank7 -
-__Ludata_bank8 102 0 ABS 0 udata_bank8 -
-__Ludata_bank9 102 0 ABS 0 udata_bank9 -
-__LresetVect 102 0 ABS 0 resetVect -
-__Hudata_acs 102 0 ABS 0 udata_acs -
-__Ludata_acs 102 0 ABS 0 udata_acs -
+__HresetVect 128 0 ABS 0 resetVect -
+__Ludata_bank5 128 0 ABS 0 udata_bank5 -
+__Ludata_bank6 128 0 ABS 0 udata_bank6 -
+__Ludata_bank7 128 0 ABS 0 udata_bank7 -
+__Ludata_bank8 128 0 ABS 0 udata_bank8 -
+__Ludata_bank9 128 0 ABS 0 udata_bank9 -
+__LresetVect 128 0 ABS 0 resetVect -
+__Hudata_acs 128 0 ABS 0 udata_acs -
+__Ludata_acs 128 0 ABS 0 udata_acs -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -371,8 +484,9 @@ __Ludata_acs 102 0 ABS 0 udata_acs -
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-resetVect 0 1FFFC 1FFFC 4 1
-udata_acs 1 500 500 2 1
+code 0 1FEDA 1FEDA 126 1
+resetVect 0 1FED6 1FED6 4 1
+udata_acs 1 500 500 4 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal
