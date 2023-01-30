@@ -4,7 +4,7 @@
 
 ***Se agregó:*** 
 
-*Proyecto con display 7Seg. (0-9) y (A-F)* - Proyecto de corrimientos pares e impares - Librería de delays ( 10us hasta 250ms)*
+*Ejercicio 2, Parcial 2 - Proyecto con display 7Seg. (0-9) y (A-F)* - Proyecto de corrimientos pares e impares - Librería de delays ( 10us hasta 250ms)*
 
 ***Se quitó:*** 
 
