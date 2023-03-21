@@ -1,0 +1,1588 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+idloc IDLOC 5 200000 200000 40 1 1
+init CODE 0 1FFFC 1FFFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 24 1 1
+$dist/default/debug\I2C_LCD.X.debug.o
+cinit CODE 0 4C72 4C72 24 1 2
+idloc IDLOC 5 200000 200000 40 1 1
+text0 CODE 0 44D0 44D0 7C 1 2
+text1 CODE 0 4960 4960 3E 1 2
+text2 CODE 0 4B1E 4B1E 2C 1 2
+text3 CODE 0 4452 4452 7E 1 2
+text4 CODE 0 4B4A 4B4A 2C 1 2
+text5 CODE 0 4786 4786 5A 1 2
+text6 CODE 0 4DC4 4DC4 14 1 2
+text7 CODE 0 45C6 45C6 76 1 2
+text8 CODE 0 4CB8 4CB8 1C 1 2
+text9 CODE 0 4160 4160 A2 1 2
+text10 CODE 0 4B76 4B76 2C 1 2
+text11 CODE 0 4E62 4E62 8 1 2
+text12 CODE 0 488C 488C 4C 1 2
+text13 CODE 0 4CD4 4CD4 1C 1 2
+text14 CODE 0 47E0 47E0 5A 1 2
+text15 CODE 0 471C 471C 6A 1 2
+text16 CODE 0 4DFE 4DFE E 1 2
+text17 CODE 0 463C 463C 74 1 2
+text18 CODE 0 46B0 46B0 6C 1 2
+text19 CODE 0 4E0C 4E0C E 1 2
+text20 CODE 0 4E6A 4E6A 8 1 2
+text21 CODE 0 4E1A 4E1A E 1 2
+text22 CODE 0 4E72 4E72 8 1 2
+text23 CODE 0 4C22 4C22 28 1 2
+text24 CODE 0 4ECE 4ECE 4 1 2
+text25 CODE 0 4ED2 4ED2 4 1 2
+text26 CODE 0 4E36 4E36 C 1 2
+text27 CODE 0 4202 4202 9E 1 2
+text28 CODE 0 454C 454C 7A 1 2
+text29 CODE 0 433E 433E 90 1 2
+text30 CODE 0 4040 4040 120 1 2
+text31 CODE 0 4DD8 4DD8 14 1 2
+text32 CODE 0 4BCE 4BCE 2A 1 2
+text33 CODE 0 4E4E 4E4E A 1 2
+text34 CODE 0 4E7A 4E7A 8 1 2
+text35 CODE 0 4D40 4D40 16 1 2
+text36 CODE 0 4D56 4D56 16 1 2
+text37 CODE 0 4E92 4E92 6 1 2
+text38 CODE 0 4E98 4E98 6 1 2
+text39 CODE 0 4E9E 4E9E 6 1 2
+text40 CODE 0 4EA4 4EA4 6 1 2
+text41 CODE 0 4D6C 4D6C 16 1 2
+text42 CODE 0 4EAA 4EAA 6 1 2
+text43 CODE 0 4E82 4E82 8 1 2
+text44 CODE 0 4E28 4E28 E 1 2
+text45 CODE 0 4EB0 4EB0 6 1 2
+text46 CODE 0 4EB6 4EB6 6 1 2
+text47 CODE 0 4E58 4E58 A 1 2
+text48 CODE 0 4ED6 4ED6 4 1 2
+text49 CODE 0 4EDA 4EDA 4 1 2
+text50 CODE 0 48D8 48D8 44 1 2
+text51 CODE 0 499E 499E 30 1 2
+text52 CODE 0 49CE 49CE 30 1 2
+text53 CODE 0 49FE 49FE 30 1 2
+text54 CODE 0 491C 491C 44 1 2
+text55 CODE 0 4A2E 4A2E 30 1 2
+text56 CODE 0 4A5E 4A5E 30 1 2
+text57 CODE 0 4A8E 4A8E 30 1 2
+text58 CODE 0 4ABE 4ABE 30 1 2
+text59 CODE 0 4AEE 4AEE 30 1 2
+text60 CODE 0 4CF0 4CF0 1C 1 2
+text61 CODE 0 43CE 43CE 84 1 2
+text62 CODE 0 4C96 4C96 22 1 2
+text63 CODE 0 483A 483A 52 1 2
+text64 CODE 0 4D82 4D82 16 1 2
+text65 CODE 0 4D98 4D98 16 1 2
+text66 CODE 0 4DAE 4DAE 16 1 2
+text67 CODE 0 4EBC 4EBC 6 1 2
+text68 CODE 0 4EC2 4EC2 6 1 2
+text69 CODE 0 4EC8 4EC8 6 1 2
+text70 CODE 0 4BF8 4BF8 2A 1 2
+text71 CODE 0 4D0C 4D0C 1C 1 2
+text72 CODE 0 4E42 4E42 C 1 2
+text73 CODE 0 4E8A 4E8A 8 1 2
+text74 CODE 0 4DEC 4DEC 12 1 2
+text75 CODE 0 4C4A 4C4A 28 1 2
+text76 CODE 0 42A0 42A0 9E 1 2
+text77 CODE 0 4D28 4D28 18 1 2
+text78 CODE 0 4BA2 4BA2 2C 1 2
+idataCOMRAM CODE 0 4EDE 4EDE 1 1 1
+cstackCOMRAM COMRAM 1 52C 52C 27 1 1
+smallconst SMALLCONST 0 4000 4000 40 1 2
+dataCOMRAM COMRAM 1 553 553 1 1 1
+bssCOMRAM COMRAM 1 501 501 2B 1 1
+config CONFIG 4 300000 300000 24 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 0-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-3FFF 1
+CONST 4EDF-1FFFB 1
+SMALLCONST 4EDF-1FFFB 1
+CODE 4-3FFF 1
+CODE 4EDF-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 554-36FF 1
+BIGSFR 0-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 554-55F 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4EDF-FFFF 1
+MEDIUMCONST 14000-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\I2C_LCD.X.debug.o
+4BA2 text78 CODE >183:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BA2 text78 CODE >186:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BA8 text78 CODE >188:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BAC text78 CODE >190:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BB0 text78 CODE >192:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BB4 text78 CODE >194:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BB8 text78 CODE >196:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BBC text78 CODE >198:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BC0 text78 CODE >200:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BC4 text78 CODE >201:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BC8 text78 CODE >203:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BCC text78 CODE >205:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D28 text77 CODE >58:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D28 text77 CODE >61:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D2E text77 CODE >63:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D32 text77 CODE >65:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D36 text77 CODE >67:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D3A text77 CODE >69:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4D3E text77 CODE >70:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+42A0 text76 CODE >55:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42A0 text76 CODE >60:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42A4 text76 CODE >61:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42A8 text76 CODE >62:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42AC text76 CODE >63:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42B0 text76 CODE >64:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42B4 text76 CODE >65:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42B8 text76 CODE >70:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42BC text76 CODE >71:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42C0 text76 CODE >72:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42C2 text76 CODE >73:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42C6 text76 CODE >74:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42C8 text76 CODE >75:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42CA text76 CODE >80:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42CE text76 CODE >81:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42D0 text76 CODE >82:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42D4 text76 CODE >83:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42D8 text76 CODE >84:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42DA text76 CODE >85:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42DE text76 CODE >90:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42E2 text76 CODE >91:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42E6 text76 CODE >92:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42EA text76 CODE >93:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42EE text76 CODE >94:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42F2 text76 CODE >95:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42F6 text76 CODE >100:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42FA text76 CODE >101:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+42FE text76 CODE >102:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4302 text76 CODE >103:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4306 text76 CODE >104:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+430A text76 CODE >105:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+430E text76 CODE >110:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4310 text76 CODE >111:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4312 text76 CODE >112:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4314 text76 CODE >113:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4316 text76 CODE >114:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+431A text76 CODE >115:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+431C text76 CODE >120:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+431E text76 CODE >121:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4320 text76 CODE >122:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4322 text76 CODE >123:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4324 text76 CODE >124:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4328 text76 CODE >125:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+432A text76 CODE >134:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4330 text76 CODE >135:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4334 text76 CODE >136:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4338 text76 CODE >137:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+433C text76 CODE >138:E:\LUIS\I2C_LCD.X\mcc_generated_files/pin_manager.c
+4C4A text75 CODE >72:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C4A text75 CODE >75:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C50 text75 CODE >77:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C54 text75 CODE >79:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C58 text75 CODE >81:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C5C text75 CODE >83:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C60 text75 CODE >85:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C64 text75 CODE >87:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C68 text75 CODE >89:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C6C text75 CODE >91:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4C70 text75 CODE >92:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DEC text74 CODE >50:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DEC text74 CODE >52:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DF0 text74 CODE >53:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DF4 text74 CODE >54:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DF8 text74 CODE >55:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4DFC text74 CODE >56:E:\LUIS\I2C_LCD.X\mcc_generated_files/mcc.c
+4E8A text73 CODE >811:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E8A text73 CODE >813:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E90 text73 CODE >814:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E42 text72 CODE >657:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E42 text72 CODE >660:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E46 text72 CODE >662:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E4A text72 CODE >664:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E4C text72 CODE >665:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D0C text71 CODE >795:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D0C text71 CODE >797:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D0E text71 CODE >798:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D10 text71 CODE >799:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D12 text71 CODE >800:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D14 text71 CODE >801:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D18 text71 CODE >802:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D1A text71 CODE >803:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D1C text71 CODE >804:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D1E text71 CODE >805:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D20 text71 CODE >806:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D22 text71 CODE >807:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D24 text71 CODE >808:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D26 text71 CODE >809:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BF8 text70 CODE >240:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BF8 text70 CODE >242:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BFC text70 CODE >243:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C0A text70 CODE >245:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C0C text70 CODE >246:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C0E text70 CODE >247:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C12 text70 CODE >248:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C16 text70 CODE >249:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C1A text70 CODE >250:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C1E text70 CODE >252:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C20 text70 CODE >253:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC8 text69 CODE >768:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC8 text69 CODE >770:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ECC text69 CODE >771:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC2 text68 CODE >773:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC2 text68 CODE >775:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC6 text68 CODE >776:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EBC text67 CODE >763:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EBC text67 CODE >765:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EC0 text67 CODE >766:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DAE text66 CODE >753:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DAE text66 CODE >755:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DC2 text66 CODE >756:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D98 text65 CODE >758:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D98 text65 CODE >760:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DAC text65 CODE >761:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D82 text64 CODE >748:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D82 text64 CODE >750:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D96 text64 CODE >751:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+483A text63 CODE >365:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+483A text63 CODE >367:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+484E text63 CODE >369:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4852 text63 CODE >370:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4856 text63 CODE >371:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+486A text63 CODE >373:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+486E text63 CODE >374:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4872 text63 CODE >375:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4886 text63 CODE >377:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+488A text63 CODE >379:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C96 text62 CODE >296:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C96 text62 CODE >298:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CA4 text62 CODE >300:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CAC text62 CODE >301:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CB4 text62 CODE >302:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CB6 text62 CODE >304:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43CE text61 CODE >331:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43D0 text61 CODE >333:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43E4 text61 CODE >335:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4400 text61 CODE >336:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4418 text61 CODE >337:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+441C text61 CODE >340:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4438 text61 CODE >341:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4450 text61 CODE >343:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CF0 text60 CODE >306:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CF0 text60 CODE >308:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D0A text60 CODE >309:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4AEE text59 CODE >163:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4AEE text59 CODE >165:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4B02 text59 CODE >166:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4B1A text59 CODE >167:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4B1C text59 CODE >168:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4ABE text58 CODE >34:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4ABE text58 CODE >36:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4AD2 text58 CODE >37:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4AEA text58 CODE >38:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4AEC text58 CODE >39:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A8E text57 CODE >81:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A8E text57 CODE >83:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4AA2 text57 CODE >84:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4ABA text57 CODE >85:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4ABC text57 CODE >86:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A5E text56 CODE >119:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A5E text56 CODE >121:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A72 text56 CODE >122:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A8A text56 CODE >123:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A8C text56 CODE >124:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A2E text55 CODE >151:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A2E text55 CODE >153:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A42 text55 CODE >154:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A5A text55 CODE >155:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4A5C text55 CODE >156:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+491C text54 CODE >185:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+491C text54 CODE >187:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+4944 text54 CODE >188:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+495C text54 CODE >189:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+495E text54 CODE >190:E:\LUIS\I2C_LCD.X\mcc_generated_files/drivers/i2c_simple_master.c
+49FE text53 CODE >142:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49FE text53 CODE >144:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4A12 text53 CODE >145:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4A2A text53 CODE >146:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4A2C text53 CODE >147:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49CE text52 CODE >149:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49CE text52 CODE >151:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49E2 text52 CODE >152:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49FA text52 CODE >153:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49FC text52 CODE >154:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+499E text51 CODE >156:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+499E text51 CODE >158:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49B2 text51 CODE >159:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49CA text51 CODE >160:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+49CC text51 CODE >161:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+48D8 text50 CODE >170:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+48D8 text50 CODE >172:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4900 text50 CODE >173:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4918 text50 CODE >174:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+491A text50 CODE >175:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4EDA text49 CODE >612:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EDA text49 CODE >614:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EDC text49 CODE >615:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED6 text48 CODE >617:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED6 text48 CODE >619:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED8 text48 CODE >620:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E58 text47 CODE >688:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E58 text47 CODE >691:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E5C text47 CODE >693:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E5E text47 CODE >695:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E60 text47 CODE >696:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EB6 text46 CODE >704:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EB6 text46 CODE >707:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EBA text46 CODE >708:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EB0 text45 CODE >698:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EB0 text45 CODE >701:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EB4 text45 CODE >702:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E28 text44 CODE >682:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E2A text44 CODE >684:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E2E text44 CODE >685:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E34 text44 CODE >686:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E82 text43 CODE >672:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E84 text43 CODE >674:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E88 text43 CODE >675:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EAA text42 CODE >667:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EAA text42 CODE >669:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EAE text42 CODE >670:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D6C text41 CODE >738:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D6C text41 CODE >740:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D80 text41 CODE >741:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EA4 text40 CODE >721:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EA4 text40 CODE >723:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EA8 text40 CODE >724:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E9E text39 CODE >726:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E9E text39 CODE >728:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4EA2 text39 CODE >729:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E98 text38 CODE >710:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E98 text38 CODE >713:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E9C text38 CODE >714:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E92 text37 CODE >677:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E92 text37 CODE >679:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E96 text37 CODE >680:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D56 text36 CODE >716:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D56 text36 CODE >718:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D6A text36 CODE >719:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D40 text35 CODE >743:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D40 text35 CODE >745:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4D54 text35 CODE >746:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E7A text34 CODE >541:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E7A text34 CODE >543:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E7E text34 CODE >544:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E80 text34 CODE >545:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E4E text33 CODE >381:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E4E text33 CODE >383:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E50 text33 CODE >384:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E54 text33 CODE >385:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E56 text33 CODE >386:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BCE text32 CODE >388:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BCE text32 CODE >390:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BD6 text32 CODE >391:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BE8 text32 CODE >393:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BEC text32 CODE >395:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BF4 text32 CODE >396:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BF6 text32 CODE >397:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DD8 text31 CODE >399:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DD8 text31 CODE >401:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DE0 text31 CODE >402:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DE8 text31 CODE >403:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DEA text31 CODE >404:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4040 text30 CODE >406:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4040 text30 CODE >408:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4058 text30 CODE >413:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4060 text30 CODE >415:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4068 text30 CODE >419:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+406E text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+409C text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40AA text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40B2 text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40BA text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40C2 text30 CODE >420:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40CC text30 CODE >422:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40E0 text30 CODE >424:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+40F4 text30 CODE >426:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+410C text30 CODE >428:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+411C text30 CODE >429:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4150 text30 CODE >430:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4156 text30 CODE >431:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+415C text30 CODE >435:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+415E text30 CODE >437:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+433E text29 CODE >439:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+433E text29 CODE >441:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4352 text29 CODE >443:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4358 text29 CODE >445:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+436C text29 CODE >447:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4384 text29 CODE >448:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4384 text29 CODE >450:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+439C text29 CODE >452:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43B2 text29 CODE >457:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43B8 text29 CODE >458:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43CA text29 CODE >459:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+43CC text29 CODE >461:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+454C text28 CODE >463:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+454C text28 CODE >465:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+454E text28 CODE >466:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4552 text28 CODE >469:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4556 text28 CODE >470:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+455C text28 CODE >473:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4562 text28 CODE >474:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4568 text28 CODE >477:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+456C text28 CODE >478:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4572 text28 CODE >479:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+459C text28 CODE >479:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+45AA text28 CODE >479:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+45B2 text28 CODE >479:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+45BA text28 CODE >479:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+45C4 text28 CODE >480:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4202 text27 CODE >482:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4202 text27 CODE >484:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4204 text27 CODE >485:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4208 text27 CODE >488:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+420C text27 CODE >489:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4212 text27 CODE >491:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4216 text27 CODE >492:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+421C text27 CODE >495:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4222 text27 CODE >496:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4228 text27 CODE >499:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+423A text27 CODE >501:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+423E text27 CODE >503:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4244 text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+426E text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+427C text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4284 text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+428C text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4294 text27 CODE >504:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+429E text27 CODE >505:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E36 text26 CODE >507:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E36 text26 CODE >509:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E3C text26 CODE >510:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E40 text26 CODE >511:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED2 text25 CODE >513:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED2 text25 CODE >515:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED4 text25 CODE >516:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ECE text24 CODE >519:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ECE text24 CODE >521:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4ED0 text24 CODE >522:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C22 text23 CODE >524:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C22 text23 CODE >526:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C26 text23 CODE >527:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C3A text23 CODE >529:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C40 text23 CODE >530:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C46 text23 CODE >532:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4C48 text23 CODE >533:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E72 text22 CODE >535:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E72 text22 CODE >537:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E76 text22 CODE >538:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E78 text22 CODE >539:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E1A text21 CODE >547:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E1A text21 CODE >549:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E1E text21 CODE >550:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E22 text21 CODE >551:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E26 text21 CODE >552:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E6A text20 CODE >554:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E6A text20 CODE >556:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E6E text20 CODE >557:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E70 text20 CODE >558:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E0C text19 CODE >560:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E0C text19 CODE >562:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E10 text19 CODE >563:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E12 text19 CODE >564:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E16 text19 CODE >565:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E18 text19 CODE >566:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46B0 text18 CODE >567:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46B0 text18 CODE >569:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46B4 text18 CODE >570:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46B8 text18 CODE >571:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46BA text18 CODE >572:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46BE text18 CODE >576:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46C6 text18 CODE >578:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46CC text18 CODE >579:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46FA text18 CODE >579:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4708 text18 CODE >579:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4710 text18 CODE >579:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+471A text18 CODE >580:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+463C text17 CODE >582:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+463C text17 CODE >585:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4640 text17 CODE >587:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4644 text17 CODE >588:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4648 text17 CODE >590:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4650 text17 CODE >592:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4658 text17 CODE >594:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4660 text17 CODE >595:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+468E text17 CODE >595:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+469C text17 CODE >595:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46A4 text17 CODE >595:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+46AE text17 CODE >596:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DFE text16 CODE >598:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4DFE text16 CODE >600:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E02 text16 CODE >601:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E04 text16 CODE >602:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E08 text16 CODE >603:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E0A text16 CODE >604:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+471C text15 CODE >354:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+471C text15 CODE >356:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4720 text15 CODE >358:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4748 text15 CODE >360:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+474C text15 CODE >362:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4784 text15 CODE >363:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+47E0 text14 CODE >816:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+47E0 text14 CODE >818:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+47E0 text14 CODE >820:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+47F2 text14 CODE >823:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+47F2 text14 CODE >824:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4804 text14 CODE >827:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4804 text14 CODE >828:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4818 text14 CODE >831:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4818 text14 CODE >832:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+482A text14 CODE >835:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+482A text14 CODE >836:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4838 text14 CODE >841:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CD4 text13 CODE >345:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CD4 text13 CODE >347:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CD8 text13 CODE >349:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CDC text13 CODE >350:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CE0 text13 CODE >347:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CEE text13 CODE >352:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+488C text12 CODE >255:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+488E text12 CODE >257:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4892 text12 CODE >258:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48A0 text12 CODE >260:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48A2 text12 CODE >261:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48A6 text12 CODE >262:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48AC text12 CODE >264:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48BC text12 CODE >266:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48C0 text12 CODE >267:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48C4 text12 CODE >268:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48C8 text12 CODE >271:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48CC text12 CODE >272:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48D0 text12 CODE >274:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48D4 text12 CODE >276:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+48D6 text12 CODE >277:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E62 text11 CODE >284:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E62 text11 CODE >286:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4E68 text11 CODE >287:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B76 text10 CODE >635:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B76 text10 CODE >637:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B86 text10 CODE >640:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B8A text10 CODE >642:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B8E text10 CODE >644:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B92 text10 CODE >646:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B96 text10 CODE >647:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B9A text10 CODE >649:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4B9E text10 CODE >651:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4BA0 text10 CODE >655:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4160 text9 CODE >207:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4162 text9 CODE >209:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4166 text9 CODE >211:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4174 text9 CODE >213:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4178 text9 CODE >214:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+417A text9 CODE >215:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+417C text9 CODE >216:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4180 text9 CODE >217:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4184 text9 CODE >218:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+418C text9 CODE >219:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+418E text9 CODE >222:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+419A text9 CODE >223:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41A2 text9 CODE >224:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41AE text9 CODE >225:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41B6 text9 CODE >226:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41C2 text9 CODE >227:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41CA text9 CODE >228:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41D6 text9 CODE >229:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41DE text9 CODE >230:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41EA text9 CODE >231:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41F2 text9 CODE >233:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41F6 text9 CODE >234:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41FA text9 CODE >235:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+41FE text9 CODE >237:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4200 text9 CODE >238:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CB8 text8 CODE >316:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CB8 text8 CODE >318:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+4CD2 text8 CODE >319:E:\LUIS\I2C_LCD.X\mcc_generated_files/i2c1_master.c
+45C6 text7 CODE >91:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+45C8 text7 CODE >93:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+45DE text7 CODE >94:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+45F6 text7 CODE >95:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+460A text7 CODE >96:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4622 text7 CODE >97:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4626 text7 CODE >98:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+463A text7 CODE >99:E:\LUIS\I2C_LCD.X\mcc_generated_files/examples/i2c1_master_example.c
+4DC4 text6 CODE >13:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4DC6 text6 CODE >14:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4DD6 text6 CODE >15:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4786 text5 CODE >17:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4788 text5 CODE >19:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+478C text5 CODE >20:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4792 text5 CODE >21:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4798 text5 CODE >22:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47A2 text5 CODE >22:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47B0 text5 CODE >22:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47B8 text5 CODE >22:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47C2 text5 CODE >24:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47C8 text5 CODE >25:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47CA text5 CODE >26:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47D0 text5 CODE >27:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47D2 text5 CODE >28:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47D8 text5 CODE >29:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+47DE text5 CODE >30:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B4A text4 CODE >40:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B4C text4 CODE >42:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B52 text4 CODE >43:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B60 text4 CODE >44:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B6A text4 CODE >45:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B74 text4 CODE >46:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4452 text3 CODE >48:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4452 text3 CODE >50:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4458 text3 CODE >51:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4468 text3 CODE >52:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+446E text3 CODE >53:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+447E text3 CODE >54:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4484 text3 CODE >55:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+448C text3 CODE >56:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4492 text3 CODE >57:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4498 text3 CODE >59:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+449E text3 CODE >60:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44A6 text3 CODE >62:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44AA text3 CODE >63:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44B0 text3 CODE >64:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44B8 text3 CODE >66:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44BE text3 CODE >67:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44CE text3 CODE >69:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B1E text2 CODE >32:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B20 text2 CODE >34:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B26 text2 CODE >35:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B34 text2 CODE >36:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B3E text2 CODE >37:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4B48 text2 CODE >38:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4960 text1 CODE >79:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4960 text1 CODE >81:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4964 text1 CODE >82:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+4978 text1 CODE >83:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+497C text1 CODE >81:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+499C text1 CODE >85:E:\LUIS\I2C_LCD.X\I2C_LCD_LIB.c
+44D0 text0 CODE >25:E:\LUIS\I2C_LCD.X\main.c
+44D0 text0 CODE >28:E:\LUIS\I2C_LCD.X\main.c
+44D4 text0 CODE >30:E:\LUIS\I2C_LCD.X\main.c
+44D8 text0 CODE >45:E:\LUIS\I2C_LCD.X\main.c
+44E0 text0 CODE >46:E:\LUIS\I2C_LCD.X\main.c
+44EC text0 CODE >47:E:\LUIS\I2C_LCD.X\main.c
+44F0 text0 CODE >48:E:\LUIS\I2C_LCD.X\main.c
+4516 text0 CODE >49:E:\LUIS\I2C_LCD.X\main.c
+452E text0 CODE >47:E:\LUIS\I2C_LCD.X\main.c
+4C72 cinit CODE >12745:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C72 cinit CODE >12747:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C72 cinit CODE >12750:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C72 cinit CODE >12772:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C74 cinit CODE >12773:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C76 cinit CODE >12774:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C78 cinit CODE >12775:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C7A cinit CODE >12776:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C7C cinit CODE >12777:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C7E cinit CODE >12778:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C80 cinit CODE >12779:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C84 cinit CODE >12783:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C88 cinit CODE >12784:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C8A cinit CODE >12785:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C8A cinit CODE >12786:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C8C cinit CODE >12787:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C8E cinit CODE >12788:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C90 cinit CODE >12794:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C90 cinit CODE >12796:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+4C92 cinit CODE >12797:C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__end_of_I2C1_SetCallback 4452 0 CODE 0 text61 dist/default/debug\I2C_LCD.X.debug.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Initialize 4BA2 0 CODE 0 text78 dist/default/debug\I2C_LCD.X.debug.o
+__Hspace_0 20000 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Hspace_1 554 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Hspace_4 600024 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_rd2RegCompleteHandler@i2c1_master_example$F156 49FE 0 CODE 0 text52 dist/default/debug\I2C_LCD.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\I2C_LCD.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_SetBuffer 4CB8 0 CODE 0 text62 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetDataCompleteCallback@ptr 535 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_PMD_Initialize 4C4A 0 CODE 0 text75 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterDisableIrq 4D28 0 CODE 0 text71 dist/default/debug\I2C_LCD.X.debug.o
+main@a 551 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+rd2RegCompleteHandler@i2c1_master_example$F156@ptr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Lsmallconst 4000 0 SMALLCONST 0 smallconst dist/default/debug\I2C_LCD.X.debug.o
+_LATA 4BE 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_LATB 4BF 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_LATC 4C0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_LATD 4C1 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_LATE 4C2 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_LATF 4C3 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD0 60 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD1 61 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD2 62 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD3 63 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD4 64 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD5 65 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD6 66 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD7 67 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_PMD8 68 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUA 401 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUB 409 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUC 411 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUD 419 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUE 421 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_WPUF 429 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+_main 44D0 0 CODE 0 text0 dist/default/debug\I2C_LCD.X.debug.o
+start 1FFFC 0 CODE 0 init C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+I2C1_Close@returnValue 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+sendDATA@dato 54C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_PCF_Wr 4DD8 0 CODE 0 text6 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterSendAck 4EA4 0 CODE 0 text40 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_rdBlkRegCompleteHandler@i2c1_master_example$F179 491C 0 CODE 0 text50 dist/default/debug\I2C_LCD.X.debug.o
+wr1RegCompleteHandler@p 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterDisableIrq 4D0C 0 CODE 0 text71 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_wr2RegCompleteHandler 4A5E 0 CODE 0 text55 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterDisableRestart 4EBC 0 CODE 0 text46 dist/default/debug\I2C_LCD.X.debug.o
+rdBlkRegCompleteHandler@i2c1_master_example$F179@ptr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_IDLE 4E4E 0 CODE 0 text33 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_CallbackReturnReset 4ED6 0 CODE 0 text48 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterClearStopFlag 4EC2 0 CODE 0 text67 dist/default/debug\I2C_LCD.X.debug.o
+sendCMD@NibbleH 54A 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+sendCMD@NibbleL 54B 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_SetDataCompleteCallback 4D0C 0 CODE 0 text60 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RX_EMPTY 4202 0 CODE 0 text27 dist/default/debug\I2C_LCD.X.debug.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__accesstop 560 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+intlevel0 0 0 CODE 0 text C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+intlevel1 0 0 CODE 0 text C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+intlevel2 0 0 CODE 0 text C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+intlevel3 0 0 CODE 0 text C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_TX_EMPTY 45C6 0 CODE 0 text28 dist/default/debug\I2C_LCD.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterGetRxData 4EAA 0 CODE 0 text42 dist/default/debug\I2C_LCD.X.debug.o
+_wr2RegCompleteHandler 4A2E 0 CODE 0 text55 dist/default/debug\I2C_LCD.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\I2C_LCD.X.debug.o
+__end_of_PMD_Initialize 4C72 0 CODE 0 text75 dist/default/debug\I2C_LCD.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\I2C_LCD.X.debug.o
+I2C1_Write1ByteRegister@reg 541 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_i2c_lcd_init 4452 0 CODE 0 text3 dist/default/debug\I2C_LCD.X.debug.o
+_i2c_lcd_text 4960 0 CODE 0 text1 dist/default/debug\I2C_LCD.X.debug.o
+__pidataCOMRAM 4EDE 0 CODE 0 idataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_BUS_COLLISION 46B0 0 CODE 0 text17 dist/default/debug\I2C_LCD.X.debug.o
+_rdBlkRegCompleteHandler 491C 0 CODE 0 text54 dist/default/debug\I2C_LCD.X.debug.o
+_ANSELA 400 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ANSELB 408 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ANSELC 410 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ANSELD 418 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ANSELE 420 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ANSELF 428 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_rdBlkRegCompleteHandler@i2c1_master_example$F179 48D8 0 CODE 0 text50 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RX_NACK_STOP 4E28 0 CODE 0 text21 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterEnableRestart 4EB0 0 CODE 0 text45 dist/default/debug\I2C_LCD.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+_I2C1BAUD 29D 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CNTH 28D 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CNTL 28C 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CON0 294 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CON1 295 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CON2 296 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__end_of_rdBlkRegCompleteHandler 4960 0 CODE 0 text54 dist/default/debug\I2C_LCD.X.debug.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+rd2RegCompleteHandler@p 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_ClearInterruptFlags 483A 0 CODE 0 text63 dist/default/debug\I2C_LCD.X.debug.o
+rd1RegCompleteHandler@i2c1_master_example$F145@ptr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+I2C1_Write1ByteRegister@address 543 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\I2C_LCD.X.debug.o
+wr2RegCompleteHandler@i2c1_master_example$F168@ptr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_BUS_COLLISION 463C 0 CODE 0 text17 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterOpen 4BA2 0 CODE 0 text10 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterStop 4E9E 0 CODE 0 text38 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_RESTART 4ECE 0 CODE 0 text24 dist/default/debug\I2C_LCD.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_RESTART_WRITE 4ED2 0 CODE 0 text25 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterClearNackFlag 4EC2 0 CODE 0 text68 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_IDLE 4E58 0 CODE 0 text33 dist/default/debug\I2C_LCD.X.debug.o
+_INLVLA 404 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_INLVLB 40C 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_INLVLC 414 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_INLVLD 41C 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_INLVLE 424 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_INLVLF 42C 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+I2C1_MasterSendTxData@data 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterOperation 48D8 0 CODE 0 text12 dist/default/debug\I2C_LCD.X.debug.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RX_EMPTY 42A0 0 CODE 0 text27 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterGetCounter 4E98 0 CODE 0 text37 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_BUS_ERROR 4E0C 0 CODE 0 text16 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_DO_RX@retFsmState 53D 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_loadPCF 47E0 0 CODE 0 text5 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_RESTART_READ 4E36 0 CODE 0 text26 dist/default/debug\I2C_LCD.X.debug.o
+_PIN_MANAGER_Initialize 42A0 0 CODE 0 text76 dist/default/debug\I2C_LCD.X.debug.o
+start_initialization 4C72 0 CODE 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+_ODCONA 402 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ODCONB 40A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ODCONC 412 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ODCOND 41A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ODCONE 422 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_ODCONF 42A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_OSCFRQ B1 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_sendCMD 4B76 0 CODE 0 text4 dist/default/debug\I2C_LCD.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\I2C_LCD.X.debug.o
+_PCF_Wr 4DC4 0 CODE 0 text6 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_i2c_lcd_init 44D0 0 CODE 0 text3 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_i2c_lcd_text 499E 0 CODE 0 text1 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_ADR_WRITE 4DD8 0 CODE 0 text31 dist/default/debug\I2C_LCD.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterGetCounter 4E92 0 CODE 0 text37 dist/default/debug\I2C_LCD.X.debug.o
+_RB1PPS 20A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_RB2PPS 20B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+rdBlkRegCompleteHandler@p 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_SYSTEM_Initialize 4DFE 0 CODE 0 text74 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterOpen 4B76 0 CODE 0 text10 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterStop 4E98 0 CODE 0 text38 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_rd2RegCompleteHandler 4A8E 0 CODE 0 text56 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsStopFlagSet 4D82 0 CODE 0 text64 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsCountFlagSet 4DAE 0 CODE 0 text66 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_CallbackReturnReset@funPtr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Poller 4CD4 0 CODE 0 text13 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetCallback@idx 531 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetCallback@ptr 52F 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsNack 4D6C 0 CODE 0 text36 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsNackFlagSet 4D98 0 CODE 0 text65 dist/default/debug\I2C_LCD.X.debug.o
+sendDATA@NibbleH 54A 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+sendDATA@NibbleL 54B 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+_paramsLCD 52B 0 COMRAM 1 bssCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Status 501 0 COMRAM 1 bssCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+PCF_Wr@dato 544 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+wr2RegCompleteHandler@p 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_rd2RegCompleteHandler 4A5E 0 CODE 0 text56 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/debug\I2C_LCD.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\I2C_LCD.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\I2C_LCD.X.debug.o
+__Hidloc 200040 0 IDLOC 5 idloc dist/default/debug\I2C_LCD.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\I2C_LCD.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\I2C_LCD.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\I2C_LCD.X.debug.o
+wr1RegCompleteHandler@i2c1_master_example$F162@ptr 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_wr1RegCompleteHandler 4AEE 0 CODE 0 text58 dist/default/debug\I2C_LCD.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\I2C_LCD.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\I2C_LCD.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\I2C_LCD.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\I2C_LCD.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\I2C_LCD.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\I2C_LCD.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\I2C_LCD.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/default/debug\I2C_LCD.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\I2C_LCD.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\I2C_LCD.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_SetAddressNackCallback 4CB8 0 CODE 0 text8 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank32 0 0 ABS 0 bank32 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank33 0 0 ABS 0 bank33 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank34 0 0 ABS 0 bank34 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank35 0 0 ABS 0 bank35 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank36 0 0 ABS 0 bank36 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank37 0 0 ABS 0 bank37 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank38 0 0 ABS 0 bank38 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank39 0 0 ABS 0 bank39 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank40 0 0 ABS 0 bank40 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank41 0 0 ABS 0 bank41 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank42 0 0 ABS 0 bank42 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank43 0 0 ABS 0 bank43 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank44 0 0 ABS 0 bank44 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank45 0 0 ABS 0 bank45 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank46 0 0 ABS 0 bank46 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank47 0 0 ABS 0 bank47 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank48 0 0 ABS 0 bank48 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank49 0 0 ABS 0 bank49 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank50 0 0 ABS 0 bank50 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank51 0 0 ABS 0 bank51 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank52 0 0 ABS 0 bank52 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank53 0 0 ABS 0 bank53 dist/default/debug\I2C_LCD.X.debug.o
+__Hbank54 0 0 ABS 0 bank54 dist/default/debug\I2C_LCD.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\I2C_LCD.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\I2C_LCD.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\I2C_LCD.X.debug.o
+__smallconst 4000 0 SMALLCONST 0 smallconst C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\I2C_LCD.X.debug.o
+__Hconfig 300024 0 CONFIG 4 config dist/default/debug\I2C_LCD.X.debug.o
+I2C1_MasterOperation@read 53F 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_wr1RegCompleteHandler@i2c1_master_example$F162 499E 0 CODE 0 text51 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/debug\I2C_LCD.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\I2C_LCD.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\I2C_LCD.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/debug\I2C_LCD.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\I2C_LCD.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\I2C_LCD.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\I2C_LCD.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\I2C_LCD.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\I2C_LCD.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\I2C_LCD.X.debug.o
+_wr1RegCompleteHandler 4ABE 0 CODE 0 text58 dist/default/debug\I2C_LCD.X.debug.o
+_wr2RegCompleteHandler@i2c1_master_example$F168 4AEE 0 CODE 0 text59 dist/default/debug\I2C_LCD.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\I2C_LCD.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\I2C_LCD.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/default/debug\I2C_LCD.X.debug.o
+__Hinit 20000 0 CODE 0 init dist/default/debug\I2C_LCD.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\I2C_LCD.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\I2C_LCD.X.debug.o
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\I2C_LCD.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\I2C_LCD.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\I2C_LCD.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\I2C_LCD.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/default/debug\I2C_LCD.X.debug.o
+__Linit 1FFFC 0 CODE 0 init dist/default/debug\I2C_LCD.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\I2C_LCD.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\I2C_LCD.X.debug.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\I2C_LCD.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterDisableRestart 4EB6 0 CODE 0 text46 dist/default/debug\I2C_LCD.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterSendNack 4E9E 0 CODE 0 text39 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterSetCounter 4E36 0 CODE 0 text44 dist/default/debug\I2C_LCD.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_BUS_ERROR 4DFE 0 CODE 0 text16 dist/default/debug\I2C_LCD.X.debug.o
+__S0 20000 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__S1 554 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__S4 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__S5 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+loadPCF@dato 548 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+loadPCF@mode 545 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_ADDRESS_NACK 471C 0 CODE 0 text18 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_CallbackReturnStop 4EDA 0 CODE 0 text49 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1STAT1bits 299 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_CallbackReturnReset 4EDA 0 CODE 0 text48 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_Open@address 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_rd1RegCompleteHandler@i2c1_master_example$F145 49FE 0 CODE 0 text53 dist/default/debug\I2C_LCD.X.debug.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_STOP 4C4A 0 CODE 0 text23 dist/default/debug\I2C_LCD.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\I2C_LCD.X.debug.o
+I2C1_DO_TX@dataTx 53D 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_CallbackReturnStop 4EDE 0 CODE 0 text49 dist/default/debug\I2C_LCD.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RESET 4E0C 0 CODE 0 text19 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterSetCounter 4E28 0 CODE 0 text44 dist/default/debug\I2C_LCD.X.debug.o
+_SYSTEM_Initialize 4DEC 0 CODE 0 text74 dist/default/debug\I2C_LCD.X.debug.o
+_rd2RegCompleteHandler@i2c1_master_example$F156 49CE 0 CODE 0 text52 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsNack 4D56 0 CODE 0 text36 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CON0bits 294 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CON1bits 295 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1ERRbits 297 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterClearCountFlag 4ECE 0 CODE 0 text69 dist/default/debug\I2C_LCD.X.debug.o
+__Hramtop 4000 0 RAM 0 ramtop dist/default/debug\I2C_LCD.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\I2C_LCD.X.debug.o
+__activetblptr 3 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\I2C_LCD.X.debug.o
+_I2C1CLK 29E 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1ERR 297 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1PIE 29B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1PIR 29A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1RXB 28A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1TXB 28B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\I2C_LCD.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\I2C_LCD.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\I2C_LCD.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\I2C_LCD.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/default/debug\I2C_LCD.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\I2C_LCD.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\I2C_LCD.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\I2C_LCD.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\I2C_LCD.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\I2C_LCD.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/default/debug\I2C_LCD.X.debug.o
+__Htext21 0 0 ABS 0 text21 dist/default/debug\I2C_LCD.X.debug.o
+__Htext22 0 0 ABS 0 text22 dist/default/debug\I2C_LCD.X.debug.o
+__Htext23 0 0 ABS 0 text23 dist/default/debug\I2C_LCD.X.debug.o
+__Htext24 0 0 ABS 0 text24 dist/default/debug\I2C_LCD.X.debug.o
+__Htext25 0 0 ABS 0 text25 dist/default/debug\I2C_LCD.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/default/debug\I2C_LCD.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/default/debug\I2C_LCD.X.debug.o
+__Htext28 0 0 ABS 0 text28 dist/default/debug\I2C_LCD.X.debug.o
+__Htext29 0 0 ABS 0 text29 dist/default/debug\I2C_LCD.X.debug.o
+__Htext30 0 0 ABS 0 text30 dist/default/debug\I2C_LCD.X.debug.o
+__Htext31 0 0 ABS 0 text31 dist/default/debug\I2C_LCD.X.debug.o
+__Htext32 0 0 ABS 0 text32 dist/default/debug\I2C_LCD.X.debug.o
+__Htext33 0 0 ABS 0 text33 dist/default/debug\I2C_LCD.X.debug.o
+__Htext34 0 0 ABS 0 text34 dist/default/debug\I2C_LCD.X.debug.o
+__Htext35 0 0 ABS 0 text35 dist/default/debug\I2C_LCD.X.debug.o
+__Htext36 0 0 ABS 0 text36 dist/default/debug\I2C_LCD.X.debug.o
+__Htext37 0 0 ABS 0 text37 dist/default/debug\I2C_LCD.X.debug.o
+__Htext38 0 0 ABS 0 text38 dist/default/debug\I2C_LCD.X.debug.o
+__Htext39 0 0 ABS 0 text39 dist/default/debug\I2C_LCD.X.debug.o
+__Htext40 0 0 ABS 0 text40 dist/default/debug\I2C_LCD.X.debug.o
+__Htext41 0 0 ABS 0 text41 dist/default/debug\I2C_LCD.X.debug.o
+__Htext42 0 0 ABS 0 text42 dist/default/debug\I2C_LCD.X.debug.o
+__Htext43 0 0 ABS 0 text43 dist/default/debug\I2C_LCD.X.debug.o
+__Htext44 0 0 ABS 0 text44 dist/default/debug\I2C_LCD.X.debug.o
+__Htext45 0 0 ABS 0 text45 dist/default/debug\I2C_LCD.X.debug.o
+__Htext46 0 0 ABS 0 text46 dist/default/debug\I2C_LCD.X.debug.o
+__Htext47 0 0 ABS 0 text47 dist/default/debug\I2C_LCD.X.debug.o
+__Htext48 0 0 ABS 0 text48 dist/default/debug\I2C_LCD.X.debug.o
+__Htext49 0 0 ABS 0 text49 dist/default/debug\I2C_LCD.X.debug.o
+__Htext50 0 0 ABS 0 text50 dist/default/debug\I2C_LCD.X.debug.o
+__Htext51 0 0 ABS 0 text51 dist/default/debug\I2C_LCD.X.debug.o
+__Htext52 0 0 ABS 0 text52 dist/default/debug\I2C_LCD.X.debug.o
+__Htext53 0 0 ABS 0 text53 dist/default/debug\I2C_LCD.X.debug.o
+__Htext54 0 0 ABS 0 text54 dist/default/debug\I2C_LCD.X.debug.o
+__Htext55 0 0 ABS 0 text55 dist/default/debug\I2C_LCD.X.debug.o
+__Htext56 0 0 ABS 0 text56 dist/default/debug\I2C_LCD.X.debug.o
+__Htext57 0 0 ABS 0 text57 dist/default/debug\I2C_LCD.X.debug.o
+__Htext58 0 0 ABS 0 text58 dist/default/debug\I2C_LCD.X.debug.o
+__Htext59 0 0 ABS 0 text59 dist/default/debug\I2C_LCD.X.debug.o
+__Htext60 0 0 ABS 0 text60 dist/default/debug\I2C_LCD.X.debug.o
+__Htext61 0 0 ABS 0 text61 dist/default/debug\I2C_LCD.X.debug.o
+__Htext62 0 0 ABS 0 text62 dist/default/debug\I2C_LCD.X.debug.o
+__Htext63 0 0 ABS 0 text63 dist/default/debug\I2C_LCD.X.debug.o
+__Htext64 0 0 ABS 0 text64 dist/default/debug\I2C_LCD.X.debug.o
+__Htext65 0 0 ABS 0 text65 dist/default/debug\I2C_LCD.X.debug.o
+__Htext66 0 0 ABS 0 text66 dist/default/debug\I2C_LCD.X.debug.o
+__Htext67 0 0 ABS 0 text67 dist/default/debug\I2C_LCD.X.debug.o
+__Htext68 0 0 ABS 0 text68 dist/default/debug\I2C_LCD.X.debug.o
+__Htext69 0 0 ABS 0 text69 dist/default/debug\I2C_LCD.X.debug.o
+__Htext70 0 0 ABS 0 text70 dist/default/debug\I2C_LCD.X.debug.o
+__Htext71 0 0 ABS 0 text71 dist/default/debug\I2C_LCD.X.debug.o
+__Htext72 0 0 ABS 0 text72 dist/default/debug\I2C_LCD.X.debug.o
+__Htext73 0 0 ABS 0 text73 dist/default/debug\I2C_LCD.X.debug.o
+__Htext74 0 0 ABS 0 text74 dist/default/debug\I2C_LCD.X.debug.o
+__Htext75 0 0 ABS 0 text75 dist/default/debug\I2C_LCD.X.debug.o
+__Htext76 0 0 ABS 0 text76 dist/default/debug\I2C_LCD.X.debug.o
+__Htext77 0 0 ABS 0 text77 dist/default/debug\I2C_LCD.X.debug.o
+__Htext78 0 0 ABS 0 text78 dist/default/debug\I2C_LCD.X.debug.o
+__Htext79 0 0 ABS 0 text79 dist/default/debug\I2C_LCD.X.debug.o
+i2c_lcd_text@str 54D 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_PIE7bits 4A5 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsRxBufFull 4D6C 0 CODE 0 text41 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterResetBus 4E58 0 CODE 0 text47 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetDataCompleteCallback@cb 532 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__ptext10 4B76 0 CODE 0 text10 dist/default/debug\I2C_LCD.X.debug.o
+__ptext11 4E62 0 CODE 0 text11 dist/default/debug\I2C_LCD.X.debug.o
+__ptext12 488C 0 CODE 0 text12 dist/default/debug\I2C_LCD.X.debug.o
+__ptext13 4CD4 0 CODE 0 text13 dist/default/debug\I2C_LCD.X.debug.o
+__ptext14 47E0 0 CODE 0 text14 dist/default/debug\I2C_LCD.X.debug.o
+__ptext15 471C 0 CODE 0 text15 dist/default/debug\I2C_LCD.X.debug.o
+__ptext16 4DFE 0 CODE 0 text16 dist/default/debug\I2C_LCD.X.debug.o
+__ptext17 463C 0 CODE 0 text17 dist/default/debug\I2C_LCD.X.debug.o
+__ptext18 46B0 0 CODE 0 text18 dist/default/debug\I2C_LCD.X.debug.o
+__ptext19 4E0C 0 CODE 0 text19 dist/default/debug\I2C_LCD.X.debug.o
+__ptext20 4E6A 0 CODE 0 text20 dist/default/debug\I2C_LCD.X.debug.o
+__ptext21 4E1A 0 CODE 0 text21 dist/default/debug\I2C_LCD.X.debug.o
+__ptext22 4E72 0 CODE 0 text22 dist/default/debug\I2C_LCD.X.debug.o
+__ptext23 4C22 0 CODE 0 text23 dist/default/debug\I2C_LCD.X.debug.o
+__ptext24 4ECE 0 CODE 0 text24 dist/default/debug\I2C_LCD.X.debug.o
+__ptext25 4ED2 0 CODE 0 text25 dist/default/debug\I2C_LCD.X.debug.o
+__ptext26 4E36 0 CODE 0 text26 dist/default/debug\I2C_LCD.X.debug.o
+__ptext27 4202 0 CODE 0 text27 dist/default/debug\I2C_LCD.X.debug.o
+__ptext28 454C 0 CODE 0 text28 dist/default/debug\I2C_LCD.X.debug.o
+__ptext29 433E 0 CODE 0 text29 dist/default/debug\I2C_LCD.X.debug.o
+__ptext30 4040 0 CODE 0 text30 dist/default/debug\I2C_LCD.X.debug.o
+__ptext31 4DD8 0 CODE 0 text31 dist/default/debug\I2C_LCD.X.debug.o
+__ptext32 4BCE 0 CODE 0 text32 dist/default/debug\I2C_LCD.X.debug.o
+__ptext33 4E4E 0 CODE 0 text33 dist/default/debug\I2C_LCD.X.debug.o
+__ptext34 4E7A 0 CODE 0 text34 dist/default/debug\I2C_LCD.X.debug.o
+__ptext35 4D40 0 CODE 0 text35 dist/default/debug\I2C_LCD.X.debug.o
+__ptext36 4D56 0 CODE 0 text36 dist/default/debug\I2C_LCD.X.debug.o
+__ptext37 4E92 0 CODE 0 text37 dist/default/debug\I2C_LCD.X.debug.o
+__ptext38 4E98 0 CODE 0 text38 dist/default/debug\I2C_LCD.X.debug.o
+__ptext39 4E9E 0 CODE 0 text39 dist/default/debug\I2C_LCD.X.debug.o
+__ptext40 4EA4 0 CODE 0 text40 dist/default/debug\I2C_LCD.X.debug.o
+__ptext41 4D6C 0 CODE 0 text41 dist/default/debug\I2C_LCD.X.debug.o
+__ptext42 4EAA 0 CODE 0 text42 dist/default/debug\I2C_LCD.X.debug.o
+__ptext43 4E82 0 CODE 0 text43 dist/default/debug\I2C_LCD.X.debug.o
+__ptext44 4E28 0 CODE 0 text44 dist/default/debug\I2C_LCD.X.debug.o
+__ptext45 4EB0 0 CODE 0 text45 dist/default/debug\I2C_LCD.X.debug.o
+__ptext46 4EB6 0 CODE 0 text46 dist/default/debug\I2C_LCD.X.debug.o
+__ptext47 4E58 0 CODE 0 text47 dist/default/debug\I2C_LCD.X.debug.o
+__ptext48 4ED6 0 CODE 0 text48 dist/default/debug\I2C_LCD.X.debug.o
+__ptext49 4EDA 0 CODE 0 text49 dist/default/debug\I2C_LCD.X.debug.o
+__ptext50 48D8 0 CODE 0 text50 dist/default/debug\I2C_LCD.X.debug.o
+__ptext51 499E 0 CODE 0 text51 dist/default/debug\I2C_LCD.X.debug.o
+__ptext52 49CE 0 CODE 0 text52 dist/default/debug\I2C_LCD.X.debug.o
+__ptext53 49FE 0 CODE 0 text53 dist/default/debug\I2C_LCD.X.debug.o
+__ptext54 491C 0 CODE 0 text54 dist/default/debug\I2C_LCD.X.debug.o
+__ptext55 4A2E 0 CODE 0 text55 dist/default/debug\I2C_LCD.X.debug.o
+__ptext56 4A5E 0 CODE 0 text56 dist/default/debug\I2C_LCD.X.debug.o
+__ptext57 4A8E 0 CODE 0 text57 dist/default/debug\I2C_LCD.X.debug.o
+__ptext58 4ABE 0 CODE 0 text58 dist/default/debug\I2C_LCD.X.debug.o
+__ptext59 4AEE 0 CODE 0 text59 dist/default/debug\I2C_LCD.X.debug.o
+__ptext60 4CF0 0 CODE 0 text60 dist/default/debug\I2C_LCD.X.debug.o
+__ptext61 43CE 0 CODE 0 text61 dist/default/debug\I2C_LCD.X.debug.o
+__ptext62 4C96 0 CODE 0 text62 dist/default/debug\I2C_LCD.X.debug.o
+__ptext63 483A 0 CODE 0 text63 dist/default/debug\I2C_LCD.X.debug.o
+__ptext64 4D82 0 CODE 0 text64 dist/default/debug\I2C_LCD.X.debug.o
+__ptext65 4D98 0 CODE 0 text65 dist/default/debug\I2C_LCD.X.debug.o
+__ptext66 4DAE 0 CODE 0 text66 dist/default/debug\I2C_LCD.X.debug.o
+__ptext67 4EBC 0 CODE 0 text67 dist/default/debug\I2C_LCD.X.debug.o
+__ptext68 4EC2 0 CODE 0 text68 dist/default/debug\I2C_LCD.X.debug.o
+__ptext69 4EC8 0 CODE 0 text69 dist/default/debug\I2C_LCD.X.debug.o
+__ptext70 4BF8 0 CODE 0 text70 dist/default/debug\I2C_LCD.X.debug.o
+__ptext71 4D0C 0 CODE 0 text71 dist/default/debug\I2C_LCD.X.debug.o
+__ptext72 4E42 0 CODE 0 text72 dist/default/debug\I2C_LCD.X.debug.o
+__ptext73 4E8A 0 CODE 0 text73 dist/default/debug\I2C_LCD.X.debug.o
+__ptext74 4DEC 0 CODE 0 text74 dist/default/debug\I2C_LCD.X.debug.o
+__ptext75 4C4A 0 CODE 0 text75 dist/default/debug\I2C_LCD.X.debug.o
+__ptext76 42A0 0 CODE 0 text76 dist/default/debug\I2C_LCD.X.debug.o
+__ptext77 4D28 0 CODE 0 text77 dist/default/debug\I2C_LCD.X.debug.o
+__ptext78 4BA2 0 CODE 0 text78 dist/default/debug\I2C_LCD.X.debug.o
+__ptext79 0 0 CODE 0 text79 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RX_ACK 4E72 0 CODE 0 text22 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterEnableRestart 4EB6 0 CODE 0 text45 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_PIN_MANAGER_Initialize 433E 0 CODE 0 text76 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank32 0 0 ABS 0 bank32 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank33 0 0 ABS 0 bank33 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank34 0 0 ABS 0 bank34 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank35 0 0 ABS 0 bank35 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank36 0 0 ABS 0 bank36 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank37 0 0 ABS 0 bank37 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank38 0 0 ABS 0 bank38 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank39 0 0 ABS 0 bank39 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank40 0 0 ABS 0 bank40 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank41 0 0 ABS 0 bank41 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank42 0 0 ABS 0 bank42 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank43 0 0 ABS 0 bank43 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank44 0 0 ABS 0 bank44 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank45 0 0 ABS 0 bank45 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank46 0 0 ABS 0 bank46 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank47 0 0 ABS 0 bank47 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank48 0 0 ABS 0 bank48 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank49 0 0 ABS 0 bank49 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank50 0 0 ABS 0 bank50 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank51 0 0 ABS 0 bank51 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank52 0 0 ABS 0 bank52 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank53 0 0 ABS 0 bank53 dist/default/debug\I2C_LCD.X.debug.o
+__Lbank54 0 0 ABS 0 bank54 dist/default/debug\I2C_LCD.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\I2C_LCD.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\I2C_LCD.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterSendTxData 4E8A 0 CODE 0 text43 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetBuffer@bufferSize 52E 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RX_NACK_STOP 4E1A 0 CODE 0 text21 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_TX$883 53B 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+sendCMD@cmd 54C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_TX_ACK 4E7A 0 CODE 0 text34 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_Write1ByteRegister@data 542 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\I2C_LCD.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_Open 4202 0 CODE 0 text9 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterWaitForEvent 47E0 0 CODE 0 text14 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_ClearInterruptFlags 488C 0 CODE 0 text63 dist/default/debug\I2C_LCD.X.debug.o
+_LATFbits 4C3 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_ADR_WRITE 4DEC 0 CODE 0 text31 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterFsm 471C 0 CODE 0 text15 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetAddressNackCallback@ptr 535 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+I2C1_MasterOperation@returnValue 540 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterWaitForEvent 483A 0 CODE 0 text14 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterClose 4E42 0 CODE 0 text72 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1SCLPPS 271 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_I2C1SDAPPS 270 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterWrite 4E62 0 CODE 0 text11 dist/default/debug\I2C_LCD.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\I2C_LCD.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__end_of_rd1RegCompleteHandler 4ABE 0 CODE 0 text57 dist/default/debug\I2C_LCD.X.debug.o
+_loadPCF 4786 0 CODE 0 text5 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterClearNackFlag 4EC8 0 CODE 0 text68 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterSendTxData 4E82 0 CODE 0 text43 dist/default/debug\I2C_LCD.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+stacklo 0 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+I2C1_Open@returnValue 52D 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterSendNack 4EA4 0 CODE 0 text39 dist/default/debug\I2C_LCD.X.debug.o
+_OSCCON1 AD 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_OSCCON3 AF 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_OSCTUNE B0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_sendCMD 4B4A 0 CODE 0 text4 dist/default/debug\I2C_LCD.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Open 4160 0 CODE 0 text9 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterClearStopFlag 4EBC 0 CODE 0 text67 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RX_NACK_RESTART 4E6A 0 CODE 0 text20 dist/default/debug\I2C_LCD.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_sendDATA 4B1E 0 CODE 0 text2 dist/default/debug\I2C_LCD.X.debug.o
+__pbssCOMRAM 501 0 COMRAM 1 bssCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RX_NACK_RESTART 4E72 0 CODE 0 text20 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_STOP 4C22 0 CODE 0 text23 dist/default/debug\I2C_LCD.X.debug.o
+_rd1RegCompleteHandler 4A8E 0 CODE 0 text57 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterOperation 488C 0 CODE 0 text12 dist/default/debug\I2C_LCD.X.debug.o
+_PIR7bits 4B5 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterGetRxData 4EB0 0 CODE 0 text42 dist/default/debug\I2C_LCD.X.debug.o
+end_of_initialization 4C90 0 CODE 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RX_ACK 4E7A 0 CODE 0 text22 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_sendDATA 4B4A 0 CODE 0 text2 dist/default/debug\I2C_LCD.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterClearIrq 4E8A 0 CODE 0 text73 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_TX_ACK 4E82 0 CODE 0 text34 dist/default/debug\I2C_LCD.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_Poller 4CF0 0 CODE 0 text13 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterFsm 4786 0 CODE 0 text15 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Close 4BF8 0 CODE 0 text70 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_RX 433E 0 CODE 0 text29 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_TX 4040 0 CODE 0 text30 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_DO_TX@retFsmState 53E 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Lramtop 4000 0 RAM 0 ramtop dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsStopFlagSet 4D98 0 CODE 0 text64 dist/default/debug\I2C_LCD.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\I2C_LCD.X.debug.o
+__pcinit 4C72 0 CODE 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+__ptext0 44D0 0 CODE 0 text0 dist/default/debug\I2C_LCD.X.debug.o
+__ptext1 4960 0 CODE 0 text1 dist/default/debug\I2C_LCD.X.debug.o
+__ptext2 4B1E 0 CODE 0 text2 dist/default/debug\I2C_LCD.X.debug.o
+__ptext3 4452 0 CODE 0 text3 dist/default/debug\I2C_LCD.X.debug.o
+__ptext4 4B4A 0 CODE 0 text4 dist/default/debug\I2C_LCD.X.debug.o
+__ptext5 4786 0 CODE 0 text5 dist/default/debug\I2C_LCD.X.debug.o
+__ptext6 4DC4 0 CODE 0 text6 dist/default/debug\I2C_LCD.X.debug.o
+__ptext7 45C6 0 CODE 0 text7 dist/default/debug\I2C_LCD.X.debug.o
+__ptext8 4CB8 0 CODE 0 text8 dist/default/debug\I2C_LCD.X.debug.o
+__ptext9 4160 0 CODE 0 text9 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1PIEbits 29B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\I2C_LCD.X.debug.o
+_I2C1PIRbits 29A 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext32 0 0 ABS 0 text32 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext33 0 0 ABS 0 text33 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext34 0 0 ABS 0 text34 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext35 0 0 ABS 0 text35 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext36 0 0 ABS 0 text36 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext37 0 0 ABS 0 text37 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext38 0 0 ABS 0 text38 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext39 0 0 ABS 0 text39 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext40 0 0 ABS 0 text40 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext41 0 0 ABS 0 text41 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext42 0 0 ABS 0 text42 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext43 0 0 ABS 0 text43 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext44 0 0 ABS 0 text44 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext45 0 0 ABS 0 text45 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext46 0 0 ABS 0 text46 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext47 0 0 ABS 0 text47 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext48 0 0 ABS 0 text48 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext49 0 0 ABS 0 text49 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext50 0 0 ABS 0 text50 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext51 0 0 ABS 0 text51 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext52 0 0 ABS 0 text52 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext53 0 0 ABS 0 text53 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext54 0 0 ABS 0 text54 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext55 0 0 ABS 0 text55 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext56 0 0 ABS 0 text56 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext57 0 0 ABS 0 text57 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext58 0 0 ABS 0 text58 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext59 0 0 ABS 0 text59 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext60 0 0 ABS 0 text60 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext61 0 0 ABS 0 text61 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext62 0 0 ABS 0 text62 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext63 0 0 ABS 0 text63 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext64 0 0 ABS 0 text64 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext65 0 0 ABS 0 text65 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext66 0 0 ABS 0 text66 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext67 0 0 ABS 0 text67 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext68 0 0 ABS 0 text68 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext69 0 0 ABS 0 text69 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext70 0 0 ABS 0 text70 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext71 0 0 ABS 0 text71 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext72 0 0 ABS 0 text72 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext73 0 0 ABS 0 text73 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext74 0 0 ABS 0 text74 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext75 0 0 ABS 0 text75 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext76 0 0 ABS 0 text76 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext77 0 0 ABS 0 text77 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext78 0 0 ABS 0 text78 dist/default/debug\I2C_LCD.X.debug.o
+__Ltext79 0 0 ABS 0 text79 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsNackFlagSet 4DAE 0 CODE 0 text65 dist/default/debug\I2C_LCD.X.debug.o
+__ramtop 4000 0 RAM 0 ramtop C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\I2C_LCD.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_SetDataCompleteCallback 4CF0 0 CODE 0 text60 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterResetBus 4E62 0 CODE 0 text47 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RESET 4E1A 0 CODE 0 text19 dist/default/debug\I2C_LCD.X.debug.o
+__psmallconst 4000 0 SMALLCONST 0 smallconst dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_RESTART 4ED2 0 CODE 0 text24 dist/default/debug\I2C_LCD.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterClose 4E4E 0 CODE 0 text72 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_SetCallback 43CE 0 CODE 0 text61 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterIsTxBufEmpty 4D40 0 CODE 0 text35 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetCallback@cb 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_SLRCONA 403 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_SLRCONB 40B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_SLRCONC 413 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_SLRCOND 41B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_SLRCONE 423 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_SLRCONF 42B 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+___heap_lo 0 0 ABS 0 - C:\Users\LUISPD~1.000\AppData\Local\Temp\xcAs7s0.o
+__end_of_I2C1_MasterWrite 4E6A 0 CODE 0 text11 dist/default/debug\I2C_LCD.X.debug.o
+___param_bank 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_ADR_READ 4BF8 0 CODE 0 text32 dist/default/debug\I2C_LCD.X.debug.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\I2C_LCD.X.debug.o
+__end_of__initialization 4C90 0 CODE 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsTxBufEmpty 4D56 0 CODE 0 text35 dist/default/debug\I2C_LCD.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetBuffer@buffer 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_RESTART_WRITE 4ED6 0 CODE 0 text25 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_Write1ByteRegister 45C6 0 CODE 0 text7 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_i2c1_fsmStateTable 403A 0 SMALLCONST 0 smallconst dist/default/debug\I2C_LCD.X.debug.o
+__pcstackCOMRAM 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_Write1ByteRegister 463C 0 CODE 0 text7 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_SEND_ADR_READ 4BCE 0 CODE 0 text32 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_Initialize 4BCE 0 CODE 0 text78 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_Close 4C22 0 CODE 0 text70 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_RX 43CE 0 CODE 0 text29 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_TX 4160 0 CODE 0 text30 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsRxBufFull 4D82 0 CODE 0 text41 dist/default/debug\I2C_LCD.X.debug.o
+rd1RegCompleteHandler@p 537 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+__end_of_main 454C 0 CODE 0 text0 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_wr1RegCompleteHandler@i2c1_master_example$F162 49CE 0 CODE 0 text51 dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_SetBuffer 4C96 0 CODE 0 text62 dist/default/debug\I2C_LCD.X.debug.o
+_OSCEN B3 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISA 4C6 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISB 4C7 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISC 4C8 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISD 4C9 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISE 4CA 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+_TRISF 4CB 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\I2C_LCD.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\I2C_LCD.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\I2C_LCD.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\I2C_LCD.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\I2C_LCD.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\I2C_LCD.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_ADDRESS_NACK 46B0 0 CODE 0 text18 dist/default/debug\I2C_LCD.X.debug.o
+I2C1_MasterSetCounter@counter 52C 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_MasterClearCountFlag 4EC8 0 CODE 0 text69 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_DO_SEND_RESTART_READ 4E42 0 CODE 0 text26 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_wr2RegCompleteHandler@i2c1_master_example$F168 4B1E 0 CODE 0 text59 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterClearIrq 4E92 0 CODE 0 text73 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_OSCILLATOR_Initialize 4D40 0 CODE 0 text77 dist/default/debug\I2C_LCD.X.debug.o
+__initialization 4C72 0 CODE 0 cinit dist/default/debug\I2C_LCD.X.debug.o
+I2C1_SetAddressNackCallback@cb 532 0 COMRAM 1 cstackCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_i2c1_fsmStateTable 4001 0 SMALLCONST 0 smallconst dist/default/debug\I2C_LCD.X.debug.o
+__pdataCOMRAM 553 0 COMRAM 1 dataCOMRAM dist/default/debug\I2C_LCD.X.debug.o
+_I2C1_DO_TX_EMPTY 454C 0 CODE 0 text28 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_SetAddressNackCallback 4CD4 0 CODE 0 text8 dist/default/debug\I2C_LCD.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\I2C_LCD.X.debug.o
+__Hsmallconst 4040 0 SMALLCONST 0 smallconst dist/default/debug\I2C_LCD.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterIsCountFlagSet 4DC4 0 CODE 0 text66 dist/default/debug\I2C_LCD.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\I2C_LCD.X.debug.o
+__end_of_I2C1_MasterSendAck 4EAA 0 CODE 0 text40 dist/default/debug\I2C_LCD.X.debug.o
+_OSCILLATOR_Initialize 4D28 0 CODE 0 text77 dist/default/debug\I2C_LCD.X.debug.o
+__end_of_rd1RegCompleteHandler@i2c1_master_example$F145 4A2E 0 CODE 0 text53 dist/default/debug\I2C_LCD.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text30 0 4040 4040 E9F 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 4000 4000 40 1
+bssCOMRAM 1 501 501 53 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,38 @@
+Disassembly Listing for Select_bank
+Generated From:
+E:/MICROCONTROLADORES/MPLAB/Select_bank.X/dist/default/production/Select_bank.X.production.elf
+16/11/2022 07:19:28 PM
+
+---  E:/MICROCONTROLADORES/MPLAB/Select_bank.X/ACCESS.s  ------------------------------------------------
+                                                  1:     
+                                                  2:     
+                                                  3:     PROCESSOR 18F57Q84
+                                                  4:     #include <xc.inc>
+                                                  5:         
+                                                  6:     PSECT resetVect,class=CODE,reloc=2
+                                                  7:     resetVect:
+1FFFC  EF00     GOTO 0x0                          8:         goto Main
+                                                  9:         
+                                                  10:    PSECT CODE
+                                                  11:    Main:
+                                                  12:        ;BSR:0x04E0, WREG: 0x04E8
+0000  0106     MOVLB 0x6                          13:        MOVLB   6		    ;seleccionamos el banco 6
+0002  0E05     MOVLW 0x5                          14:        MOVLW   5		    ;5->W (cargamos W con el valor de 5)
+0004  6F00     MOVWF 0x0, BANKED                  15:        MOVWF   0x600,1	    ;(W)->f : 0x600
+                                                  16:        
+0006  0107     MOVLB 0x7                          17:        MOVLB   7		    ;seleccionamos el banco 7
+0008  0E06     MOVLW 0x6                          18:        MOVLW   6		    ;6->W (cargamos W con el valor de 6)
+000A  6F00     MOVWF 0x0, BANKED                  19:        MOVWF   0x700,1	    ;(W)->f : 0x700
+                                                  20:        
+000C  0108     MOVLB 0x8                          21:        MOVLB   8		    ;seleccionamos el banco 8
+000E  0EFF     MOVLW 0xFF                         22:        MOVLW   255		    ;255->W (cargamos W con el valor de 255)
+0010  6F02     MOVWF 0x2, BANKED                  23:        MOVWF   0x802,1	    ;(W)->f : 0x802
+                                                  24:        
+0012  0109     MOVLB 0x9                          25:        MOVLB   9		    ;seleccionamos el banco 9
+0014  0E0A     MOVLW 0xA                          26:        MOVLW   10		    ;10->W (cargamos W con el valor de 10)
+0016  6F10     MOVWF 0x10, BANKED                 27:        MOVWF   0x910,1	    ;(W)->f : 0x910
+                                                  28:        
+                                                  29:    END resetVect
+                                                  30:    
+                                                  31:    
+                                                  32:    
